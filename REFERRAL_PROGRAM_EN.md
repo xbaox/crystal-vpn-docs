@@ -318,3 +318,10 @@ burn, the referrer-referral binding is forever.
 Questions? **[@bao_gigastore](https://t.me/bao_gigastore)**.
 
 — BAO, founder of Crystal VPN
+
+---
+
+## ⚖️ Full Rules and Terms
+
+This document is a short description of the program for users.
+If you need the formal rules (commissions, payouts, bans, partner deactivation, liabilities) — see [TERMS_REFERRAL.md](./TERMS_REFERRAL.md) *(currently in Russian)*.
