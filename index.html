@@ -1,21 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Crystal VPN — Документация</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal VPN — Правила и Программа</title>
+    
+    <link rel="manifest" href="manifest.webmanifest">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Стили для переключателя языков и табов */
+        .header-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #30363d;
+        }
+        .nav-tabs button, .lang-switch button {
+            background: #21262d;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+        .nav-tabs button.active, .lang-switch button.active {
+            background: #1f6feb;
+            border-color: #1f6feb;
+            color: white;
+        }
+        .nav-tabs button:hover:not(.active), .lang-switch button:hover:not(.active) {
+            background: #30363d;
+        }
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #161b22;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+        }
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .header-controls { flex-direction: column; gap: 10px; }
+        }
+    </style>
 </head>
 <body>
-  <div id="app">Загрузка...</div>
-  <script>
-    window.$docsify = {
-      name: '💎 Crystal VPN',
-      loadSidebar: true, // Включаем боковое меню
-      subMaxLevel: 2, // Заголовки станут кликабельным оглавлением
-      auto2top: true // При переходе на новую страницу кидать наверх
+
+<div class="container">
+    <div class="header-controls">
+        <div class="nav-tabs">
+            <button onclick="loadDoc('ref')" class="active" id="tab-ref">🤝 Партнёрка</button>
+            <button onclick="loadDoc('terms')" id="tab-terms">📜 Оферта</button>
+        </div>
+        <div class="lang-switch" id="lang-container">
+            <button onclick="changeLang('ru')" class="active" id="lang-ru">RU</button>
+            <button onclick="changeLang('en')" id="lang-en">EN</button>
+            <button onclick="changeLang('vi')" id="lang-vi">VI</button>
+        </div>
+    </div>
+
+    <div id="content" class="markdown-body">
+        Загрузка...
+    </div>
+</div>
+
+<script>
+    let currentDoc = 'ref'; // 'ref' или 'terms'
+    let currentLang = 'ru';
+
+    // Маппинг файлов
+    const files = {
+        'ref': {
+            'ru': 'REFERRAL_PROGRAM.md',
+            'en': 'REFERRAL_PROGRAM_EN.md',
+            'vi': 'REFERRAL_PROGRAM_VI.md'
+        },
+        'terms': {
+            'ru': 'TERMS_REFERRAL.md',
+            // Если появятся переводы оферты, добавь их сюда
+            'en': 'TERMS_REFERRAL.md', 
+            'vi': 'TERMS_REFERRAL.md'
+        }
+    };
+
+    async function loadContent() {
+        const fileName = files[currentDoc][currentLang];
+        document.getElementById('content').innerHTML = '<p>Загрузка...</p>';
+        
+        try {
+            const response = await fetch(fileName);
+            if (!response.ok) throw new Error('Файл не найден');
+            const text = await response.text();
+            document.getElementById('content').innerHTML = marked.parse(text);
+        } catch (error) {
+            document.getElementById('content').innerHTML = `<p>Ошибка загрузки документа: ${fileName}</p>`;
+        }
     }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+    function loadDoc(docType) {
+        currentDoc = docType;
+        
+        // Обновляем UI табов
+        document.getElementById('tab-ref').classList.toggle('active', docType === 'ref');
+        document.getElementById('tab-terms').classList.toggle('active', docType === 'terms');
+        
+        // Скрываем выбор языка для оферты (если у нее пока только RU версия)
+        document.getElementById('lang-container').style.display = (docType === 'terms') ? 'none' : 'block';
+        
+        loadContent();
+    }
+
+    function changeLang(lang) {
+        currentLang = lang;
+        document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
+        loadContent();
+    }
+
+    // Загрузка при старте
+    window.onload = () => loadContent();
+</script>
+
 </body>
 </html>
