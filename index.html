@@ -91,22 +91,22 @@
     let currentDoc = 'ref'; // 'ref' или 'terms'
     let currentLang = 'ru';
 
-    // Маппинг файлов
+    // Маппинг файлов с добавленными переводами оферты
     const files = {
         'ref': {
-            'ru': 'REFERRAL_PROGRAM.md',
+            'ru': 'REFERRAL_PROGRAM (1).md', // Если в репозитории он так называется
             'en': 'REFERRAL_PROGRAM_EN.md',
             'vi': 'REFERRAL_PROGRAM_VI.md'
         },
         'terms': {
             'ru': 'TERMS_REFERRAL.md',
-            // Если появятся переводы оферты, добавь их сюда
-            'en': 'TERMS_REFERRAL.md', 
-            'vi': 'TERMS_REFERRAL.md'
+            'en': 'TERMS_REFERRAL_EN.md', 
+            'vi': 'TERMS_REFERRAL_VI.md'
         }
     };
 
     async function loadContent() {
+        // Проверяем актуальное имя RU файла партнерки по загруженному тексту (замени 'REFERRAL_PROGRAM (1).md' на 'REFERRAL_PROGRAM.md' при необходимости)
         const fileName = files[currentDoc][currentLang];
         document.getElementById('content').innerHTML = '<p>Загрузка...</p>';
         
@@ -127,8 +127,7 @@
         document.getElementById('tab-ref').classList.toggle('active', docType === 'ref');
         document.getElementById('tab-terms').classList.toggle('active', docType === 'terms');
         
-        // Скрываем выбор языка для оферты (если у нее пока только RU версия)
-        document.getElementById('lang-container').style.display = (docType === 'terms') ? 'none' : 'block';
+        // Теперь скрытие переключателя языков убрано, он доступен и для Оферты
         
         loadContent();
     }
