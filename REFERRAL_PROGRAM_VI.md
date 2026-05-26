@@ -321,3 +321,10 @@ vĩnh viễn.
 Câu hỏi? **[@bao_gigastore](https://t.me/bao_gigastore)**.
 
 — BAO, người sáng lập Crystal VPN
+
+---
+
+## ⚖️ Toàn bộ quy tắc và điều khoản
+
+Tài liệu này là mô tả ngắn gọn về chương trình dành cho người dùng.
+Nếu bạn cần các quy tắc chính thức (hoa hồng, thanh toán, lệnh cấm, hủy kích hoạt đối tác, trách nhiệm pháp lý) — xem [TERMS_REFERRAL.md](./TERMS_REFERRAL.md) *(hiện bằng tiếng Nga)*.
