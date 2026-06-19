@@ -1,148 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal VPN — Правила и Программа</title>
-    
-    <link rel="manifest" href="manifest.webmanifest">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
-    
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal VPN — Правовые документы</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root{
+      --bg:#0a0e14; --surface:#10151d; --surface-2:#161d27;
+      --border:#222c38; --text:#c7d2de; --muted:#8593a3;
+      --accent:#34d0e6; --accent-soft:rgba(52,208,230,.12);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased; line-height:1.5;
+    }
+    .topline{height:3px;background:linear-gradient(90deg,var(--accent),transparent 70%)}
+    .wrap{max-width:860px;margin:0 auto;padding:28px 20px 64px}
 
-    <style>
-        body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        /* Стили для переключателя языков и табов */
-        .header-controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #30363d;
-        }
-        .nav-tabs button, .lang-switch button {
-            background: #21262d;
-            border: 1px solid #30363d;
-            color: #c9d1d9;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.2s;
-            font-weight: 500;
-        }
-        .nav-tabs button.active, .lang-switch button.active {
-            background: #1f6feb;
-            border-color: #1f6feb;
-            color: white;
-        }
-        .nav-tabs button:hover:not(.active), .lang-switch button:hover:not(.active) {
-            background: #30363d;
-        }
-        .markdown-body {
-            box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: #161b22;
-            border-radius: 10px;
-            border: 1px solid #30363d;
-        }
-        @media (max-width: 767px) {
-            .markdown-body { padding: 15px; }
-            .header-controls { flex-direction: column; gap: 10px; }
-        }
-    </style>
+    /* ---- Header (the "official document" signature) ---- */
+    header.brand{margin-bottom:22px}
+    .eyebrow{
+      font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--muted);font-weight:600;margin-bottom:6px;
+    }
+    .title{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:700;letter-spacing:-.01em}
+    .title .gem{
+      display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;
+      border:1px solid var(--border);border-radius:9px;background:var(--accent-soft);
+      color:var(--accent);font-size:16px;flex:none;
+    }
+    .reqs{
+      margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 14px;
+      font-size:12.5px;color:var(--muted);
+      padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;
+    }
+    .reqs b{color:var(--text);font-weight:600}
+    .reqs a{color:var(--accent);text-decoration:none}
+    .reqs .dot{color:var(--border)}
+
+    /* ---- Controls ---- */
+    .controls{
+      display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+      margin:22px 0 16px;
+    }
+    .tabs{display:flex;flex-wrap:wrap;gap:8px}
+    .tabs button,.langs button{
+      font:inherit;font-size:13.5px;font-weight:500;cursor:pointer;
+      background:var(--surface-2);color:var(--text);
+      border:1px solid var(--border);border-radius:999px;padding:8px 15px;
+      transition:background .15s,border-color .15s,color .15s;
+    }
+    .tabs button:hover:not(.active),.langs button:hover:not(.active){background:#1d2733;border-color:#2c3947}
+    .tabs button.active{background:var(--accent);border-color:var(--accent);color:#04181c;font-weight:600}
+    .langs{display:flex;gap:6px}
+    .langs button{padding:7px 12px;font-size:12.5px}
+    .langs button.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+    /* ---- Content ---- */
+    .markdown-body{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:var(--radius);padding:32px;min-height:240px;
+      animation:fade .25s ease;
+    }
+    @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+    .markdown-body a{color:var(--accent)}
+    .markdown-body h1{border-bottom-color:var(--border)}
+    .markdown-body h2{border-bottom-color:var(--border);margin-top:1.6em}
+    .markdown-body blockquote{border-left-color:var(--accent);color:var(--muted)}
+    .markdown-body table tr{background:transparent}
+    .markdown-body table td,.markdown-body table th{border-color:var(--border)}
+    .state{color:var(--muted);padding:20px 0;text-align:center}
+
+    footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);
+      font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between}
+    footer a{color:var(--accent);text-decoration:none}
+
+    @media (max-width:600px){
+      .wrap{padding:20px 14px 48px}
+      .title{font-size:22px}
+      .markdown-body{padding:20px}
+      .controls{flex-direction:column;align-items:stretch}
+      .langs{justify-content:flex-start}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}.markdown-body{animation:none}
+    }
+  </style>
 </head>
 <body>
+  <div class="topline"></div>
+  <div class="wrap">
+    <header class="brand">
+      <div class="eyebrow" id="eyebrow">Официальные документы</div>
+      <div class="title"><span class="gem">❄</span>Crystal VPN</div>
+      <div class="reqs">
+        <span><b id="r-self">Самозанятый</b> Нгуен За Бао</span><span class="dot">·</span>
+        <span><b>ИНН</b> 504109403841</span><span class="dot">·</span>
+        <span><b id="r-sup">Поддержка</b> <a href="https://t.me/bao_gigastore">@bao_gigastore</a></span>
+      </div>
+    </header>
 
-<div class="container">
-    <div class="header-controls">
-        <div class="nav-tabs">
-            <button onclick="loadDoc('ref')" class="active" id="tab-ref">🤝 Партнёрка</button>
-            <button onclick="loadDoc('terms')" id="tab-terms">📜 Оферта</button>
-        </div>
-        <div class="lang-switch" id="lang-container">
-            <button onclick="changeLang('ru')" class="active" id="lang-ru">RU</button>
-            <button onclick="changeLang('en')" id="lang-en">EN</button>
-            <button onclick="changeLang('vi')" id="lang-vi">VI</button>
-        </div>
+    <div class="controls">
+      <div class="tabs" id="tabs"></div>
+      <div class="langs" id="langs">
+        <button data-lang="ru" class="active">RU</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="vi">VI</button>
+      </div>
     </div>
 
-    <div id="content" class="markdown-body">
-        Загрузка...
-    </div>
-</div>
+    <main id="content" class="markdown-body"><div class="state" id="state">Загрузка…</div></main>
 
-<script>
-    let currentDoc = 'ref'; // 'ref' или 'terms'
-    let currentLang = 'ru';
+    <footer>
+      <span><a href="https://t.me/CrystalVPN_bot">@CrystalVPN_bot</a> · zabaonguen03@gmail.com</span>
+      <span id="updated">Редакция 1.1 · 20.06.2026</span>
+    </footer>
+  </div>
 
-    // Маппинг файлов с добавленными переводами оферты
-    const files = {
-        'ref': {
-            'ru': 'REFERRAL_PROGRAM.md', // Если в репозитории он так называется
-            'en': 'REFERRAL_PROGRAM_EN.md',
-            'vi': 'REFERRAL_PROGRAM_VI.md'
-        },
-        'terms': {
-            'ru': 'TERMS_REFERRAL.md',
-            'en': 'TERMS_REFERRAL_EN.md', 
-            'vi': 'TERMS_REFERRAL_VI.md'
-        }
+  <script>
+    // Документ → файл по языку. Достаточно положить .md рядом с index.html.
+    const DOCS = {
+      offer:   { ru:'OFFER.md',            en:'OFFER_EN.md',            vi:'OFFER_VI.md'            },
+      privacy: { ru:'PRIVACY.md',          en:'PRIVACY_EN.md',          vi:'PRIVACY_VI.md'          },
+      partner: { ru:'REFERRAL_PROGRAM.md', en:'REFERRAL_PROGRAM_EN.md', vi:'REFERRAL_PROGRAM_VI.md' },
+      terms:   { ru:'TERMS_REFERRAL.md',   en:'TERMS_REFERRAL_EN.md',   vi:'TERMS_REFERRAL_VI.md'   },
+    };
+    const ORDER = ['offer','privacy','partner','terms'];
+    const TAB_LABELS = {
+      offer:   { ru:'📜 Оферта',            en:'📜 Offer',         vi:'📜 Điều khoản'   },
+      privacy: { ru:'🔐 Конфиденциальность', en:'🔐 Privacy',       vi:'🔐 Bảo mật'      },
+      partner: { ru:'🤝 Партнёрка',          en:'🤝 Partners',      vi:'🤝 Đối tác'      },
+      terms:   { ru:'📋 Правила партнёрки',  en:'📋 Partner rules', vi:'📋 Quy tắc'      },
+    };
+    const UI = {
+      ru:{eyebrow:'Официальные документы',loading:'Загрузка…',error:'Не удалось загрузить документ',self:'Самозанятый',sup:'Поддержка',updated:'Редакция 1.1 · 20.06.2026'},
+      en:{eyebrow:'Official documents',loading:'Loading…',error:'Failed to load document',self:'Self-employed',sup:'Support',updated:'Version 1.1 · 2026-06-20'},
+      vi:{eyebrow:'Tài liệu chính thức',loading:'Đang tải…',error:'Không tải được tài liệu',self:'Người tự kinh doanh',sup:'Hỗ trợ',updated:'Phiên bản 1.1 · 20.06.2026'},
     };
 
-    async function loadContent() {
-        // Проверяем актуальное имя RU файла партнерки по загруженному тексту (замени 'REFERRAL_PROGRAM (1).md' на 'REFERRAL_PROGRAM.md' при необходимости)
-        const fileName = files[currentDoc][currentLang];
-        document.getElementById('content').innerHTML = '<p>Загрузка...</p>';
-        
-        try {
-            const response = await fetch(fileName);
-            if (!response.ok) throw new Error('Файл не найден');
-            const text = await response.text();
-            document.getElementById('content').innerHTML = marked.parse(text);
-        } catch (error) {
-            document.getElementById('content').innerHTML = `<p>Ошибка загрузки документа: ${fileName}</p>`;
-        }
+    let doc = (location.hash.replace('#','') in DOCS) ? location.hash.replace('#','') : 'offer';
+    let lang = (['ru','en','vi'].includes(localStorage.getItem('cvpn_lang'))) ? localStorage.getItem('cvpn_lang') : 'ru';
+
+    const $ = id => document.getElementById(id);
+
+    function renderTabs(){
+      $('tabs').innerHTML = '';
+      ORDER.forEach(key=>{
+        const b = document.createElement('button');
+        b.textContent = TAB_LABELS[key][lang];
+        b.className = key===doc ? 'active' : '';
+        b.onclick = ()=>{ doc=key; location.hash = key; load(); };
+        $('tabs').appendChild(b);
+      });
+    }
+    function renderChrome(){
+      document.documentElement.lang = lang;
+      $('eyebrow').textContent = UI[lang].eyebrow;
+      $('r-self').textContent = UI[lang].self;
+      $('r-sup').textContent = UI[lang].sup;
+      $('updated').textContent = UI[lang].updated;
+      [...$('langs').children].forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+    }
+    async function load(){
+      renderTabs(); renderChrome();
+      $('content').innerHTML = `<div class="state">${UI[lang].loading}</div>`;
+      const file = DOCS[doc][lang];
+      try{
+        const res = await fetch(file, {cache:'no-cache'});
+        if(!res.ok) throw 0;
+        const md = await res.text();
+        $('content').innerHTML = marked.parse(md);
+      }catch(e){
+        $('content').innerHTML = `<div class="state">${UI[lang].error}: <code>${file}</code></div>`;
+      }
     }
 
-    function loadDoc(docType) {
-        currentDoc = docType;
-        
-        // Обновляем UI табов
-        document.getElementById('tab-ref').classList.toggle('active', docType === 'ref');
-        document.getElementById('tab-terms').classList.toggle('active', docType === 'terms');
-        
-        // Теперь скрытие переключателя языков убрано, он доступен и для Оферты
-        
-        loadContent();
-    }
-
-    function changeLang(lang) {
-        currentLang = lang;
-        document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
-        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-        document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
-        loadContent();
-    }
-
-    // Загрузка при старте
-    window.onload = () => loadContent();
-</script>
-
+    [...$('langs').children].forEach(b=>{
+      b.onclick = ()=>{ lang=b.dataset.lang; localStorage.setItem('cvpn_lang',lang); load(); };
+    });
+    window.addEventListener('hashchange', ()=>{
+      const h = location.hash.replace('#','');
+      if(h in DOCS && h!==doc){ doc=h; load(); }
+    });
+    load();
+  </script>
 </body>
 </html>
