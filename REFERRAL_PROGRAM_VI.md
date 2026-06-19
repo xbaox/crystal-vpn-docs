@@ -1,8 +1,6 @@
 # 🤝 Chương trình Crystal VPN — Cách kiếm tiền cùng chúng tôi
 
-> **⚠️ Lưu ý:** Bản dịch tiếng Việt này được tạo bằng AI từ bản gốc tiếng
-> Nga và cần được người bản xứ kiểm tra. Nếu bạn thấy lỗi — hãy viết
-> cho BAO: [@bao_gigastore](https://t.me/bao_gigastore).
+> 💬 Thấy lỗi dịch thuật? Hãy nhắn cho BAO: [@bao_gigastore](https://t.me/bao_gigastore).
 
 Chào bạn! Tài liệu này giải thích mọi thứ bạn cần biết về chương trình
 **Crystal VPN**:
@@ -327,4 +325,4 @@ Câu hỏi? **[@bao_gigastore](https://t.me/bao_gigastore)**.
 ## ⚖️ Toàn bộ quy tắc và điều khoản
 
 Tài liệu này là mô tả ngắn gọn về chương trình dành cho người dùng.
-Nếu bạn cần các quy tắc chính thức (hoa hồng, thanh toán, lệnh cấm, hủy kích hoạt đối tác, trách nhiệm pháp lý) — xem [TERMS_REFERRAL.md](./TERMS_REFERRAL.md) *(hiện bằng tiếng Nga)*.
+Nếu bạn cần các quy tắc chính thức (hoa hồng, thanh toán, lệnh cấm, hủy kích hoạt đối tác, trách nhiệm pháp lý) — mở tab [Quy tắc Chương trình Đối tác](#terms).

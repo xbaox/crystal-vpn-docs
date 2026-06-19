@@ -145,8 +145,23 @@
       vi:{eyebrow:'Tài liệu chính thức',loading:'Đang tải…',error:'Không tải được tài liệu',self:'Người tự kinh doanh',sup:'Hỗ trợ',updated:'Phiên bản 1.1 · 20.06.2026'},
     };
 
+    // Язык: приоритет ?lang= в URL (deep-link из бота) → localStorage → 'ru'.
+    function initialLang(){
+      const p = new URLSearchParams(location.search).get('lang');
+      if (['ru','en','vi'].includes(p)){ localStorage.setItem('cvpn_lang', p); return p; }
+      const ls = localStorage.getItem('cvpn_lang');
+      return ['ru','en','vi'].includes(ls) ? ls : 'ru';
+    }
+    // Держим ?lang= в адресной строке в актуальном состоянии (чтобы reload
+    // не сбрасывал выбор языка на дефолтный).
+    function syncLangInUrl(l){
+      const u = new URL(location.href);
+      if (l === 'ru') u.searchParams.delete('lang'); else u.searchParams.set('lang', l);
+      history.replaceState(null, '', u.toString());
+    }
+
     let doc = (location.hash.replace('#','') in DOCS) ? location.hash.replace('#','') : 'offer';
-    let lang = (['ru','en','vi'].includes(localStorage.getItem('cvpn_lang'))) ? localStorage.getItem('cvpn_lang') : 'ru';
+    let lang = initialLang();
 
     const $ = id => document.getElementById(id);
 
@@ -183,7 +198,7 @@
     }
 
     [...$('langs').children].forEach(b=>{
-      b.onclick = ()=>{ lang=b.dataset.lang; localStorage.setItem('cvpn_lang',lang); load(); };
+      b.onclick = ()=>{ lang=b.dataset.lang; localStorage.setItem('cvpn_lang',lang); syncLangInUrl(lang); load(); };
     });
     window.addEventListener('hashchange', ()=>{
       const h = location.hash.replace('#','');
