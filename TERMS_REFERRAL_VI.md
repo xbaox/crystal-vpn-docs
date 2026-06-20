@@ -23,7 +23,7 @@ viên») là người tự kinh doanh, người nộp thuế thu nhập chuyên 
 
 **1.3.** Crystal VPN là dịch vụ phần mềm mã hóa lưu lượng internet và bảo vệ
 dữ liệu; giao diện chính là bot Telegram
-[@CrystalVPN_bot](https://t.me/CrystalVPN_bot). Điều kiện cung cấp quyền truy
+[@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot). Điều kiện cung cấp quyền truy
 cập Dịch vụ được mô tả trong Hợp đồng công khai (tab [«Điều khoản»](#offer)).
 
 **1.4.** Người tham gia là người dùng bot (Người giới thiệu hoặc Người được
@@ -61,7 +61,7 @@ quảng bá Dịch vụ; được tính và thanh toán theo điều kiện tạ
 ## 3. Chương trình Giới thiệu Tiêu chuẩn
 
 **3.1.** Mỗi người dùng bot nhận được một liên kết giới thiệu duy nhất có
-dạng `t.me/CrystalVPN_bot?start=ref_<id>`. Liên kết là cố định và không thay
+dạng `t.me/Crysta1_VPNbot?start=ref_<id>`. Liên kết là cố định và không thay
 đổi.
 
 **3.2.** Với mỗi người bạn được mời thanh toán bất kỳ gói nào **lần đầu tiên**
@@ -83,7 +83,7 @@ thưởng cho Người giới thiệu:
 - không được rút thành tiền hoặc đổi lấy dịch vụ khác;
 - không được chuyển cho người dùng khác;
 - nếu tại thời điểm tính thưởng Người giới thiệu không có gói đang hoạt động —
-  ngày thưởng được tích lũy ở trạng thái «pending» và tự động áp dụng trong
+  ngày thưởng được tích lũy ở trạng thái «pending» и tự động áp dụng trong
   lần mua tiếp theo;
 - ngày thưởng pending không hết hạn theo thời gian.
 
@@ -101,7 +101,7 @@ không cần giải thích lý do.
 
 **4.2.** Khi nhận trạng thái, Đối tác được cung cấp:
 - một mã khuyến mãi văn bản duy nhất (ví dụ `OLEG15`);
-- liên kết đối tác `t.me/CrystalVPN_bot?start=p_<mã>`;
+- liên kết đối tác `t.me/Crysta1_VPNbot?start=p_<mã>`;
 - tỷ lệ hoa hồng cá nhân (mặc định: 45% từ lần thanh toán đầu tiên, 15% từ
   tất cả các lần gia hạn tiếp theo của cùng một người dùng). Tỷ lệ cụ thể
   được thỏa thuận riêng và có thể khác với mặc định.
@@ -246,7 +246,7 @@ trách nhiệm về tính chính xác và kịp thời của chúng.
 - không gây hiểu lầm cho người dùng.
 
 **9.3.** Quản trị viên không chịu trách nhiệm về:
-- việc không thể thanh toán do thông tin Đối tác cung cấp sai;
+- việc không thể thanh toán do thôngত্তি Đối tác cung cấp sai;
 - hành động của bên thứ ba (ví dụ chặn dịch vụ thanh toán ở quốc gia của Đối
   tác);
 - lợi nhuận bị mất do Dịch vụ tạm thời không khả dụng.
@@ -288,7 +288,7 @@ và thay thế các thỏa thuận trước đó về cùng nội dung.
 **Quản trị viên:** [@bao_gigastore](https://t.me/bao_gigastore) ·
 zabaonguen03@gmail.com
 
-**Bot:** [@CrystalVPN_bot](https://t.me/CrystalVPN_bot)
+**Bot:** [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot)
 
 **Kênh tin tức:** [@baoyoutube](https://t.me/baoyoutube)
 
