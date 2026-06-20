@@ -22,7 +22,7 @@ zabaonguen03@gmail.com.
 
 **1.3.** Crystal VPN is a software service for encrypting internet traffic
 and protecting data; its primary interface is the Telegram bot
-[@CrystalVPN_bot](https://t.me/CrystalVPN_bot). The terms for providing
+[@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot). The terms for providing
 access to the Service are described in the Public Offer (the [Offer](#offer)
 tab).
 
@@ -61,7 +61,7 @@ the terms of Section 4.
 ## 3. Standard Referral Program
 
 **3.1.** Every bot user receives a unique referral link formatted as
-`t.me/CrystalVPN_bot?start=ref_<id>`. The link is permanent and does not
+`t.me/Crysta1_VPNbot?start=ref_<id>`. The link is permanent and does not
 change.
 
 **3.2.** For every invited friend who pays for any tariff for the **first
@@ -102,7 +102,7 @@ Partners personally and may decline without giving reasons.
 
 **4.2.** Upon receiving the status, the Partner is provided with:
 - a unique text promo code (e.g., `OLEG15`);
-- a partner link `t.me/CrystalVPN_bot?start=p_<code>`;
+- a partner link `t.me/Crysta1_VPNbot?start=p_<code>`;
 - individual commission rates (default: 45% on the first payment, 15% on all
   subsequent renewals by the same user). Specific rates are agreed
   individually and may differ from the defaults.
@@ -292,7 +292,7 @@ regarding the Program and supersede prior arrangements on its subject matter.
 **Administrator:** [@bao_gigastore](https://t.me/bao_gigastore) ·
 zabaonguen03@gmail.com
 
-**Bot:** [@CrystalVPN_bot](https://t.me/CrystalVPN_bot)
+**Bot:** [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot)
 
 **News Channel:** [@baoyoutube](https://t.me/baoyoutube)
 
