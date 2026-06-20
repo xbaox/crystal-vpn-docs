@@ -32,9 +32,7 @@ personal link.
 
 1. **Open the bot** → tap «🤝 Invite a friend» in the main menu.
 2. **Copy your link** — it looks like:
-   ```
-   t.me/CrystalVPN_bot?start=ref_<your_id>
-   ```
+   t.me/Crysta1_VPNbot?start=ref_<your_id>
 3. **Send it to a friend** — DM, chat, story, anywhere.
 
 ### What the referrer (you) gets
@@ -43,34 +41,34 @@ personal link.
 
 - The bonus is credited **only after the friend's first paid purchase**.
 - A promocode (free activation) **doesn't count** as a purchase — no
-  bonus from it.
+bonus from it.
 - If you have an **active subscription** — 14 days are added to its
-  expiry instantly. You get: *«🎁 Your friend got a subscription! +14
-  days»*.
+expiry instantly. You get: *«🎁 Your friend got a subscription! +14
+days»*.
 - If you **have no subscription** — 14 days are stored in your personal
-  "pending wallet". When you buy a subscription next time — the bonus
-  applies on top automatically. Nothing lost.
+"pending wallet". When you buy a subscription next time — the bonus
+applies on top automatically. Nothing lost.
 
 ### What the referral (your friend) gets
 
 🎉 **15% discount on the first purchase.**
 
 - The discount applies automatically — the friend just opens your link
-  and sees it right on the tariff card.
+and sees it right on the tariff card.
 - The discount is **one-time** — first purchase only.
 - It doesn't apply to renewals (but the partner % continues if you're a
-  partner — see §2).
+partner — see §2).
 
 ### Rules and limits
 
 - **One binding — forever.** A friend is bound to you on their first
-  `/start`. If they later open someone else's link — the original
-  binding stays.
+`/start`. If they later open someone else's link — the original
+binding stays.
 - **New users only.** If the friend was already in the bot before you
-  sent them the link — no binding.
+sent them the link — no binding.
 - **No self-referrals.** If you open your own link — it's ignored.
 - **Referral discount doesn't stack with `legacy` discount** (for old
-  BAO clients). The maximum of the two is used.
+BAO clients). The maximum of the two is used.
 - **No limit on how many friends to invite.** Even 100 — bonuses add up.
 
 ### How to share conveniently
@@ -98,7 +96,7 @@ chat to share, and the link with text is pre-filled.
 
 When your referral pays:
 - **First payment:** **45%** of the amount (default; may differ in
-  your agreement).
+your agreement).
 - **All renewals:** **15%** of the amount.
 
 Commissions accumulate on your in-bot balance. When you request a
@@ -111,16 +109,16 @@ The same as in the standard referral: **15% discount on first purchase**.
 The 15% client discount and the partner % are **different money**:
 - 15% goes to the **client** (lowers their bill).
 - The partner % goes to **you** (from the amount the client actually
-  paid).
+paid).
 
 ### Two acquisition tools
 
 After receiving partner status, you'll have **two** ways to bind a client:
 
-1. **Deep link:** `t.me/CrystalVPN_bot?start=p_<your_code>`
-   *(example: `t.me/CrystalVPN_bot?start=p_OLEG15`)*
+1. **Deep link:** `t.me/Crysta1_VPNbot?start=p_<your_code>`
+*(example: `t.me/Crysta1_VPNbot?start=p_OLEG15`)*
 2. **Text promocode:** the client enters your code themselves in the
-   «🎁 Promocode» screen.
+«🎁 Promocode» screen.
 
 Both methods give the same result: the client is bound to you + gets
 15% off. Use whichever is more convenient for the channel: link for
@@ -131,11 +129,11 @@ social media, promocode for voice mention in YouTube/podcasts.
 1. **Message BAO** on Telegram: [@bao_gigastore](https://t.me/bao_gigastore).
 2. Briefly say: who you are, where you'll promote, expected audience.
 3. BAO decides: add or not. If added — gives you:
-   - `partner_code` (your promocode, letters/digits, e.g. `OLEG15`)
-   - `percent_first` (% of first payment, usually 45)
-   - `percent_renewal` (% of renewals, usually 15)
+- `partner_code` (your promocode, letters/digits, e.g. `OLEG15`)
+- `percent_first` (% of first payment, usually 45)
+- `percent_renewal` (% of renewals, usually 15)
 4. After activation, the bot will show **«💼 Partner program»** in
-   the main menu.
+the main menu.
 
 ### Partner cabinet
 
@@ -143,10 +141,10 @@ In **«💼 Partner program»** you'll see:
 
 - 🔗 **Your link** and 🎟 **promocode** (with quick-copy buttons)
 - 📊 **Stats:**
-  - Total referrals
-  - Active ones
-  - Earned **all-time**
-  - Payable **right now**
+- Total referrals
+- Active ones
+- Earned **all-time**
+- Payable **right now**
 - 👥 **List of referrals**
 - 💰 **Payout history**
 - 📤 **Request payout**
@@ -155,11 +153,11 @@ In **«💼 Partner program»** you'll see:
 ### How to get paid (payout request)
 
 1. In the cabinet → **«💳 Payment details»** → fill in (bank / card /
-   crypto-wallet — whatever you prefer).
+crypto-wallet — whatever you prefer).
 2. Tap **«📤 Request payout»**.
 3. BAO gets a notification with your amount and details.
 4. Transfers outside the bot → marks as closed in admin panel → you
-   get **«✅ Payout of X ₽ closed»**.
+get **«✅ Payout of X ₽ closed»**.
 
 **No minimum for a payout request** — even 500 ₽ or 50 000 ₽. BAO
 decides in fact whether to transfer (if the sum is too small, they
@@ -205,7 +203,7 @@ For those paying in crypto. Uses the official service
 2. Choose asset: **USDT** or **TON**.
 3. A 30-minute invoice opens — go to @CryptoBot and pay.
 4. Within 30 seconds after payment — the bot sends **«🎉 Thanks for
-   your purchase!»** with devices.
+your purchase!»** with devices.
 
 **Pros:**
 - Privacy — CryptoBot allows anonymous payments.
@@ -214,7 +212,7 @@ For those paying in crypto. Uses the official service
 
 **Cons:**
 - 30-second delay (vs 1-2 for Stars) — this is a polling job that
-  asks CryptoBot every 30s.
+asks CryptoBot every 30s.
 
 **If the bot doesn't show «💎 Pay with crypto»** — the feature is
 currently off (no CryptoBot token in BAO's config). That's fine, Stars
