@@ -53,11 +53,11 @@ the paid period.
 **5.1.** The price is determined by the plan chosen by the Customer in the Telegram bot.
 All settlements are cashless.
 
-**5.2.** Payment methods: bank card via the **Robokassa** payment service, **Telegram Stars**,
+**5.2.** Payment methods: bank card via the **ЮKassa (YooKassa)** payment service, **Telegram Stars**,
 cryptocurrency via **@CryptoBot**.
 
-**5.3.** For bank-card payments via Robokassa, an electronic receipt is generated and sent to
-the Customer automatically under Federal Law No. 422-FZ (professional income tax).
+**5.3.** For bank-card payments via ЮKassa, a receipt is generated and sent to the Customer
+automatically through the «Moy Nalog» service under Federal Law No. 422-FZ (professional income tax).
 
 ## 6. Refunds
 

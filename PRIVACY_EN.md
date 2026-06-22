@@ -25,7 +25,7 @@ The minimum necessary:
 - **Traffic contents** — we cannot see which sites you visit or what data you transfer.
   The VLESS + Reality protocol encrypts traffic from client to server.
 - DNS query logs, browsing history, search history, contacts, media — not collected or stored.
-- **Bank card data** — for card payments it is processed by **Robokassa (Robokassa LLC)**.
+- **Bank card data** — for card payments it is processed by **ЮKassa (YooKassa, ЮMoney NBCO LLC)**.
   The bot does not collect, receive or store card details; only the fact of payment, order
   number and amount are available to it.
 
@@ -38,7 +38,7 @@ keeping payment records and handling possible refunds.
 
 We do not share data with third parties, except:
 
-- **Robokassa LLC** — to process bank-card payments;
+- **ЮMoney NBCO LLC** (ЮKassa) — to process bank-card payments;
 - requests from authorized bodies under the law of the hosting country (only what we hold is
   provided; we do not have traffic contents).
 

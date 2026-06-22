@@ -52,11 +52,11 @@ trong suốt thời hạn đã thanh toán.
 **5.1.** Giá được xác định theo gói Khách hàng chọn trong bot Telegram. Mọi thanh toán đều
 không dùng tiền mặt.
 
-**5.2.** Phương thức thanh toán: thẻ ngân hàng qua dịch vụ **Robokassa**, **Telegram Stars**,
+**5.2.** Phương thức thanh toán: thẻ ngân hàng qua dịch vụ **ЮKassa (YooKassa)**, **Telegram Stars**,
 tiền điện tử qua **@CryptoBot**.
 
-**5.3.** Khi thanh toán bằng thẻ ngân hàng qua Robokassa, biên lai điện tử được tạo và gửi cho
-Khách hàng tự động theo Luật Liên bang số 422-FZ (thuế thu nhập nghề nghiệp).
+**5.3.** Khi thanh toán bằng thẻ ngân hàng qua ЮKassa, biên lai được tạo và gửi cho Khách hàng
+tự động qua dịch vụ «Moy Nalog» theo Luật Liên bang số 422-FZ (thuế thu nhập nghề nghiệp).
 
 ## 6. Hoàn tiền
 

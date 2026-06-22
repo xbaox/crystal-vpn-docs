@@ -26,7 +26,7 @@ Mức tối thiểu cần thiết:
   Giao thức VLESS + Reality mã hóa lưu lượng từ máy khách đến máy chủ.
 - Nhật ký truy vấn DNS, lịch sử truy cập, lịch sử tìm kiếm, danh bạ, tệp media — không thu thập, không lưu.
 - **Dữ liệu thẻ ngân hàng** — khi thanh toán bằng thẻ, dữ liệu được xử lý bởi
-  **Robokassa (Robokassa LLC)**. Bot không thu thập, không nhận và không lưu thông tin thẻ;
+  **ЮKassa (YooKassa, ЮMoney NBCO LLC)**. Bot không thu thập, không nhận và không lưu thông tin thẻ;
   chỉ có sẵn dữ kiện thanh toán, số đơn hàng và số tiền.
 
 ## 3. Vì sao chúng tôi cần dữ liệu này
@@ -38,7 +38,7 @@ nhận thanh toán và xử lý hoàn tiền khi cần.
 
 Không chia sẻ với bên thứ ba, ngoại trừ:
 
-- **Robokassa LLC** — để xử lý thanh toán bằng thẻ ngân hàng;
+- **ЮMoney NBCO LLC** (ЮKassa) — để xử lý thanh toán bằng thẻ ngân hàng;
 - yêu cầu của cơ quan có thẩm quyền theo pháp luật quốc gia lưu trữ (chỉ cung cấp những gì
   chúng tôi có; chúng tôi không có nội dung lưu lượng).
 
