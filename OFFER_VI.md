@@ -1,6 +1,6 @@
 # Crystal VPN — Điều khoản dịch vụ (Chào hàng công khai)
 
-> **Phiên bản 1.1 ngày 20.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực
+> **Phiên bản 1.2 ngày 25.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực
 > pháp lý là bản tiếng Nga. Nhà cung cấp có quyền sửa đổi điều khoản; phiên bản mới áp dụng
 > cho các hợp đồng ký kết sau đó.
 
@@ -27,7 +27,7 @@ Hợp đồng được coi là giao kết kể từ thời điểm chấp nhận
   trên mạng công cộng thông qua các máy chủ chuyên dụng.
 - **Dịch vụ (cung cấp)** — cấp cho Khách hàng quyền truy cập Dịch vụ theo hình thức đăng ký.
 - **Gói đăng ký** — quyền sử dụng Dịch vụ trong thời hạn đã thanh toán (1, 3, 6 hoặc 12 tháng).
-- **Bot Telegram** — giao diện chính của Dịch vụ: [@CrystalVPN_bot](https://t.me/CrystalVPN_bot).
+- **Bot Telegram** — giao diện chính của Dịch vụ: [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot).
 
 ## 3. Đối tượng hợp đồng
 
@@ -57,6 +57,18 @@ tiền điện tử qua **@CryptoBot**.
 
 **5.3.** Khi thanh toán bằng thẻ ngân hàng qua ЮKassa, biên lai được tạo và gửi cho Khách hàng
 tự động qua dịch vụ «Moy Nalog» theo Luật Liên bang số 422-FZ (thuế thu nhập nghề nghiệp).
+
+**5.4.** Khi thanh toán bằng thẻ ngân hàng qua ЮKassa, Khách hàng có thể bật tự động gia hạn gói
+đăng ký. Khi đó, phương thức thanh toán được lưu tại dịch vụ thanh toán để dùng cho các lần trừ
+tiền tiếp theo, và 1 (một) ngày trước khi kết thúc kỳ hạn đã thanh toán, gói đăng ký sẽ tự động
+gia hạn cho một kỳ hạn tương đương; số tiền bị trừ là giá gói theo biểu phí có hiệu lực tại thời
+điểm trừ tiền. Việc bật tự động gia hạn là tự nguyện và không ảnh hưởng đến khả năng thanh toán
+một lần.
+
+**5.5.** Khách hàng có quyền tắt tự động gia hạn và hủy liên kết phương thức thanh toán đã lưu bất
+cứ lúc nào trong bot Telegram: mục «Khóa của tôi» → «Hủy liên kết thẻ». Việc hủy liên kết sẽ xóa
+ngay phương thức thanh toán đã lưu tại dịch vụ thanh toán; không thực hiện thêm bất kỳ lần tự động
+trừ tiền nào. Gói đăng ký đã thanh toán trước đó vẫn có hiệu lực đến hết kỳ hạn đã thanh toán.
 
 ## 6. Hoàn tiền
 
@@ -121,7 +133,7 @@ thương lượng; thủ tục tiền tố tụng là bắt buộc.
 | **INN** | 504109403841 |
 | **E-mail** | zabaonguen03@gmail.com |
 | **Điện thoại** | +7 909 666-68-88 |
-| **Bot Telegram** | [@CrystalVPN_bot](https://t.me/CrystalVPN_bot) |
+| **Bot Telegram** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
 | **Hỗ trợ** | [@bao_gigastore](https://t.me/bao_gigastore) |
 
-*Phiên bản 1.1 ngày 20.06.2026*
+*Phiên bản 1.2 ngày 25.06.2026*

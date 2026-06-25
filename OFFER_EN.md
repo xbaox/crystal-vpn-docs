@@ -1,6 +1,6 @@
 # Crystal VPN — Public Offer (Terms of Service)
 
-> **Version 1.1 of 2026-06-20.** Informational translation. The binding version is the
+> **Version 1.2 of 2026-06-25.** Informational translation. The binding version is the
 > Russian one. The Provider may amend the terms; the new version applies to contracts
 > concluded thereafter.
 
@@ -28,7 +28,7 @@ Service's Telegram bot.
   protecting data on public networks via dedicated servers.
 - **Service(s)** — providing the Customer access to the Service on a subscription basis.
 - **Subscription** — the right to use the Service for the paid period (1, 3, 6 or 12 months).
-- **Telegram bot** — the Service's main interface: [@CrystalVPN_bot](https://t.me/CrystalVPN_bot).
+- **Telegram bot** — the Service's main interface: [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot).
 
 ## 3. Subject
 
@@ -58,6 +58,18 @@ cryptocurrency via **@CryptoBot**.
 
 **5.3.** For bank-card payments via ЮKassa, a receipt is generated and sent to the Customer
 automatically through the «Moy Nalog» service under Federal Law No. 422-FZ (professional income tax).
+
+**5.4.** When paying by bank card via ЮKassa, the Customer may enable automatic subscription
+renewal (auto-renewal). In that case the payment method is saved by the payment service for
+subsequent charges, and 1 (one) day before the paid period ends the subscription is renewed
+automatically for an equivalent period; the subscription price under the tariff in effect at the
+time of the charge is debited. Enabling auto-renewal is voluntary and does not affect the option
+of a one-time payment.
+
+**5.5.** The Customer may disable auto-renewal and unlink the saved payment method at any time in
+the Telegram bot: the "My keys" section → "Unlink card". Unlinking immediately deletes the payment
+method saved by the payment service; no further automatic charges are made. Any previously paid
+subscription remains in effect until the end of the paid period.
 
 ## 6. Refunds
 
@@ -123,7 +135,7 @@ by negotiation; a pre-trial procedure is mandatory.
 | **INN** | 504109403841 |
 | **E-mail** | zabaonguen03@gmail.com |
 | **Phone** | +7 909 666-68-88 |
-| **Telegram bot** | [@CrystalVPN_bot](https://t.me/CrystalVPN_bot) |
+| **Telegram bot** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
 | **Support** | [@bao_gigastore](https://t.me/bao_gigastore) |
 
-*Version 1.1 of 2026-06-20*
+*Version 1.2 of 2026-06-25*
