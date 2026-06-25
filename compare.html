@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Crystal VPN — Сравнение тарифов</title>
+
+<!--
+  Страница сравнения тарифов Crystal VPN (GitHub Pages, репозиторий crystal-vpn-docs,
+  файл compare.html). Чистый HTML/CSS/JS, без сборки и без бэкенда. Дизайн-язык —
+  как у доков/чека/return: гранёный кристалл, аврора-фон, parallax по курсору,
+  тёмная «телеграмная» палитра, электрик-синий #3DA5FF. Уважает prefers-reduced-motion.
+
+  На неё ведёт URL-кнопка «📊 Сравнить тарифы» из бота (config.SITE_COMPARE_URL,
+  keyboards/tariff.py). RU/EN/VI + deep-link ?lang=.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0a0e15; --bg-2:#0c111b; --surface:#121b28; --surface-2:#16202e;
+  --border:#23344a; --border-2:#2b3e57;
+  --text:#eef4fb; --body:#c4d2e0; --muted:#7e93a8;
+  --accent:#3da5ff; --accent-light:#7cc4ff; --accent-deep:#2f86d6;
+  --ink:#04243f; --good:#5bffa8;
+  --glow:rgba(61,165,255,.55);
+  --radius:16px; --radius-lg:22px; --maxw:980px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--body);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased; line-height:1.6;
+  overflow-x:hidden; position:relative; min-height:100vh;
+}
+
+/* aurora */
+.aurora{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
+.aurora::before, .aurora::after{content:""; position:absolute; border-radius:50%; filter:blur(80px); opacity:.5}
+.aurora::before{width:680px;height:680px;left:50%;top:-180px;margin-left:-340px;
+  background:radial-gradient(closest-side, rgba(61,165,255,.30), transparent 70%); animation:auroraA 18s ease-in-out infinite alternate}
+.aurora::after{width:520px;height:520px;right:-160px;top:280px;
+  background:radial-gradient(closest-side, rgba(124,196,255,.16), transparent 70%); animation:auroraB 22s ease-in-out infinite alternate}
+.topline{position:relative; z-index:2; height:2px;
+  background:linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent-light) 50%, var(--accent) 70%, transparent);
+  background-size:200% 100%; animation:thread 5s linear infinite}
+
+.wrap{position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; padding:0 20px 72px}
+
+/* topbar */
+.topbar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 0 6px}
+.brand-mini{display:flex; align-items:center; gap:10px; font-family:"Space Grotesk"; font-weight:700; font-size:16px; letter-spacing:-.01em; color:var(--text)}
+.brand-mini svg{width:24px; height:24px; display:block}
+.brand-mini a{color:inherit; text-decoration:none; display:flex; align-items:center; gap:10px}
+.langs{display:flex; gap:6px}
+.langs button{font:inherit; font-family:"JetBrains Mono"; font-size:12px; font-weight:500; letter-spacing:.04em;
+  cursor:pointer; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:9px;
+  padding:7px 11px; transition:all .18s var(--ease)}
+.langs button:hover:not(.active){color:var(--text); border-color:var(--border-2); transform:translateY(-1px)}
+.langs button.active{color:var(--accent); border-color:var(--accent); background:rgba(61,165,255,.10); box-shadow:0 0 0 3px rgba(61,165,255,.08)}
+
+/* hero */
+.hero{text-align:center; padding:26px 0 14px}
+.stage{position:relative; width:120px; height:120px; margin:0 auto 18px; perspective:600px; animation:floatY 5.5s ease-in-out infinite}
+.stage .halo{position:absolute; inset:-30%; border-radius:50%; z-index:0; pointer-events:none;
+  background:radial-gradient(closest-side, var(--glow), transparent 70%); filter:blur(10px); animation:halo 3.4s ease-in-out infinite}
+.gem{position:relative; z-index:1; width:120px; height:120px; display:block; transform-style:preserve-3d; will-change:transform;
+  transition:transform .25s var(--ease); animation:gemIn .9s var(--ease) both; filter:drop-shadow(0 14px 28px rgba(0,0,0,.5))}
+.gem .top{animation:twinkle 3.2s ease-in-out infinite}
+.sheen{position:absolute; inset:0; z-index:2; pointer-events:none; overflow:hidden; clip-path:polygon(28% 11%,72% 11%,91% 43%,50% 88%,9% 43%)}
+.sheen::before{content:""; position:absolute; top:-25%; left:0; width:55%; height:150%;
+  background:linear-gradient(100deg, transparent, rgba(255,255,255,.6), transparent);
+  transform:translateX(-220%) skewX(-16deg); animation:sweep 4.2s ease-in-out infinite; animation-delay:1.2s}
+.eyebrow{font-family:"JetBrains Mono"; font-size:11.5px; letter-spacing:.26em; text-transform:uppercase; color:var(--muted); font-weight:500; animation:rise .6s var(--ease) both .15s}
+.h1{font-family:"Space Grotesk"; font-weight:700; font-size:clamp(30px,6vw,46px); letter-spacing:-.02em; margin:10px 0 0; color:var(--text); line-height:1.04;
+  background:linear-gradient(180deg,#fff,#cfe4ff 130%);-webkit-background-clip:text; background-clip:text; animation:rise .6s var(--ease) both .24s}
+.tagline{margin:12px auto 0; max-width:520px; font-size:15px; color:var(--muted); animation:rise .6s var(--ease) both .32s}
+
+/* plans grid */
+.plans{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:30px 0 8px}
+.plan{position:relative; background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--border); border-radius:var(--radius-lg); padding:22px 20px 18px;
+  box-shadow:inset 0 1px 0 rgba(124,196,255,.16), 0 18px 50px rgba(0,0,0,.30);
+  animation:rise .6s var(--ease) both; }
+.plan.hit{border-color:var(--accent); box-shadow:inset 0 1px 0 rgba(124,196,255,.22), 0 0 0 1px rgba(61,165,255,.25), 0 22px 60px rgba(0,0,0,.40)}
+.plan .badge{position:absolute; top:-11px; left:50%; transform:translateX(-50%);
+  font-family:"JetBrains Mono"; font-size:11px; font-weight:600; letter-spacing:.08em; white-space:nowrap;
+  color:var(--ink); background:linear-gradient(180deg,var(--accent-light),var(--accent));
+  border-radius:999px; padding:4px 12px; box-shadow:0 6px 16px rgba(61,165,255,.4)}
+.plan h2{font-family:"Space Grotesk"; font-weight:700; font-size:22px; letter-spacing:-.01em; color:var(--text); margin:4px 0 2px; text-align:center}
+.plan .dev{font-family:"JetBrains Mono"; font-size:12.5px; color:var(--accent-light); text-align:center; margin-bottom:14px}
+.rowp{display:flex; align-items:baseline; justify-content:space-between; gap:10px; padding:11px 0; border-top:1px solid var(--border)}
+.rowp:first-of-type{border-top:0}
+.rowp .per{font-size:14px; color:var(--muted); white-space:nowrap}
+.rowp .right{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+.rowp .price{font-family:"Space Grotesk"; font-weight:600; font-size:17px; color:var(--text); white-space:nowrap}
+.rowp .price .cur{color:var(--accent); font-weight:600; margin-left:2px}
+.save{font-family:"JetBrains Mono"; font-size:11px; font-weight:500; color:var(--good);
+  background:rgba(91,255,168,.10); border:1px solid rgba(91,255,168,.28); border-radius:8px; padding:2px 7px; white-space:nowrap}
+.save.none{color:var(--muted); background:transparent; border-color:transparent; padding:2px 0}
+
+.note{margin:18px auto 0; max-width:640px; text-align:center; font-size:13px; color:var(--muted); font-family:"JetBrains Mono"}
+.cta{display:flex; justify-content:center; margin:26px 0 0}
+.cta a{font-family:"Space Grotesk"; font-weight:600; font-size:15px; text-decoration:none; color:var(--ink);
+  background:linear-gradient(180deg,var(--accent-light),var(--accent)); border-radius:12px; padding:13px 26px;
+  box-shadow:0 10px 26px rgba(61,165,255,.35); transition:transform .18s var(--ease), box-shadow .18s var(--ease)}
+.cta a:hover{transform:translateY(-2px); box-shadow:0 16px 34px rgba(61,165,255,.45)}
+
+footer{position:relative; z-index:2; max-width:var(--maxw); margin:30px auto 0; padding:18px 20px 0; border-top:1px solid var(--border);
+  display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:space-between; align-items:center; font-family:"JetBrains Mono"; font-size:12px; color:var(--muted)}
+footer a{color:var(--accent); text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px}
+
+@keyframes thread{to{background-position:200% 0}}
+@keyframes auroraA{0%{transform:translate(-40px,-10px) scale(1)}100%{transform:translate(40px,30px) scale(1.15)}}
+@keyframes auroraB{0%{transform:translate(30px,0) scale(1.05)}100%{transform:translate(-30px,-30px) scale(.9)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes halo{0%,100%{opacity:.45; transform:scale(.92)}50%{opacity:.85; transform:scale(1.1)}}
+@keyframes gemIn{from{opacity:0; transform:scale(.7) rotateY(-25deg)}to{opacity:1; transform:none}}
+@keyframes twinkle{0%,100%{fill-opacity:1}50%{fill-opacity:.7}}
+@keyframes sweep{0%{transform:translateX(-220%) skewX(-16deg)}55%{transform:translateX(360%) skewX(-16deg)}100%{transform:translateX(360%) skewX(-16deg)}}
+@keyframes rise{from{opacity:0; transform:translateY(12px)}to{opacity:1; transform:none}}
+
+@media (max-width:760px){
+  .plans{grid-template-columns:1fr; gap:14px}
+  .plan{order:0}
+  .plan.hit{order:-1}
+  .stage{width:104px; height:104px}
+  .gem{width:104px; height:104px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important; transition:none !important}
+  .aurora,.sheen{display:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true"></div>
+<div class="topline" aria-hidden="true"></div>
+
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand-mini">
+      <a href="index.html">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs><linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc4ff"/><stop offset="1" stop-color="#3da5ff"/></linearGradient></defs>
+          <polygon points="10,44 90,44 50,84" fill="#2f86d6"/>
+          <polygon points="26,12 74,12 90,44 10,44" fill="#3da5ff"/>
+          <polygon points="26,12 74,12 50,44" fill="url(#gm)"/>
+        </svg>
+        Crystal VPN
+      </a>
+    </div>
+    <div class="langs" id="langs">
+      <button data-lang="ru" class="active">RU</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="vi">VI</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="stage" id="stage">
+      <span class="halo"></span>
+      <svg class="gem" id="gem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="fTop" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#aed8ff"/><stop offset="1" stop-color="#6bb8ff"/></linearGradient>
+          <linearGradient id="fLeft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3da5ff"/><stop offset="1" stop-color="#2c7fd0"/></linearGradient>
+          <linearGradient id="fRight" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fb0ff"/><stop offset="1" stop-color="#2f86d6"/></linearGradient>
+          <linearGradient id="fBody" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#3796ec"/><stop offset="1" stop-color="#1f6bb8"/></linearGradient>
+        </defs>
+        <polygon points="10,44 90,44 50,86" fill="url(#fBody)"/>
+        <polygon points="10,44 50,86 50,44" fill="#2a78c8"/>
+        <polygon points="26,12 50,44 10,44" fill="url(#fLeft)"/>
+        <polygon points="74,12 90,44 50,44" fill="url(#fRight)"/>
+        <polygon points="26,12 74,12 50,44" fill="url(#fTop)" class="top"/>
+        <line x1="26" y1="12" x2="10" y2="44" stroke="#bfe3ff" stroke-width="1"/>
+        <line x1="74" y1="12" x2="90" y2="44" stroke="#bfe3ff" stroke-width="1"/>
+        <line x1="50" y1="44" x2="50" y2="86" stroke="#bfe3ff" stroke-width=".8" opacity=".6"/>
+      </svg>
+      <span class="sheen"></span>
+    </div>
+    <div class="eyebrow" id="eyebrow">Тарифы</div>
+    <h1 class="h1" id="title">Сравнить тарифы</h1>
+    <p class="tagline" id="tagline">Три тарифа — от одного устройства до целой семьи. Чем длиннее период, тем выгоднее.</p>
+  </header>
+
+  <main class="plans" id="plans"></main>
+
+  <p class="note" id="note"></p>
+  <div class="cta"><a id="cta" href="https://t.me/Crysta1_VPNbot?start=compare">Открыть бот</a></div>
+</div>
+
+<footer>
+  <span><a href="https://t.me/Crysta1_VPNbot">@Crysta1_VPNbot</a> · zabaonguen03@gmail.com</span>
+  <span id="updated">Crystal VPN</span>
+</footer>
+
+<script>
+/* ============================================================
+   ЦЕНЫ ТАРИФОВ — ОБНОВЛЯЙ ЗДЕСЬ ПРИ ИЗМЕНЕНИИ ТАРИФОВ!
+   Источник истины — бот: db/schema.py (tariff_seed) и админ-раздел
+   «🔥 Цены тарифов». GitHub Pages без бэкенда, поэтому значения статичны
+   и НЕ синхронизируются с ботом автоматически — поменял цену в боте,
+   поменяй и тут (m = цена в ₽ за период: 1 / 3 / 6 / 12 месяцев).
+   Выгода % считается из этих цен в renderPlans() — её править НЕ нужно.
+   ============================================================ */
+const PRICES = {
+  PERSONAL: { devices: 1, hit: false, m: {1: 390, 3: 1090, 6: 1990, 12: 3490} },
+  PRO:      { devices: 3, hit: true,  m: {1: 690, 3: 1890, 6: 3490, 12: 5990} },
+  FAMILY:   { devices: 5, hit: false, m: {1: 890, 3: 2390, 6: 4290, 12: 7490} },
+};
+const PLAN_ORDER = ['PERSONAL', 'PRO', 'FAMILY'];
+const PERIODS = [1, 3, 6, 12];
+
+const I18N = {
+  ru: {
+    eyebrow:'Тарифы', title:'Сравнить тарифы',
+    tagline:'Три тарифа — от одного устройства до целой семьи. Чем длиннее период, тем выгоднее.',
+    devices:n=>`${n} ${plural(n,'устройство','устройства','устройств')}`,
+    period:m=>`${m} мес`, hit:'🔥 ХИТ', save:p=>`−${p}%`,
+    note:'Цены указаны в ₽ для ориентира. Оплата — в боте: картой (ЮKassa), Telegram Stars или криптой.',
+    cta:'Открыть бот', updated:'Crystal VPN', lang:'ru'
+  },
+  en: {
+    eyebrow:'Plans', title:'Compare plans',
+    tagline:'Three plans — from a single device to the whole family. The longer the term, the bigger the saving.',
+    devices:n=>`${n} ${n===1?'device':'devices'}`,
+    period:m=>`${m} mo`, hit:'🔥 BEST', save:p=>`−${p}%`,
+    note:'Prices are shown in ₽ for reference. Payment is inside the bot: card (YooKassa), Telegram Stars or crypto.',
+    cta:'Open the bot', updated:'Crystal VPN', lang:'en'
+  },
+  vi: {
+    eyebrow:'Các gói', title:'So sánh các gói',
+    tagline:'Ba gói — từ một thiết bị đến cả gia đình. Thời hạn càng dài, càng tiết kiệm.',
+    devices:n=>`${n} thiết bị`,
+    period:m=>`${m} tháng`, hit:'🔥 HOT', save:p=>`−${p}%`,
+    note:'Giá hiển thị bằng ₽ để tham khảo. Thanh toán trong bot: thẻ (YooKassa), Telegram Stars hoặc tiền mã hóa.',
+    cta:'Mở bot', updated:'Crystal VPN', lang:'vi'
+  },
+};
+
+function plural(n, one, few, many){
+  const m10=n%10, m100=n%100;
+  if(m10===1 && m100!==11) return one;
+  if(m10>=2 && m10<=4 && (m100<10 || m100>=20)) return few;
+  return many;
+}
+function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '\u202f'); }
+/* выгода % периода относительно цены за 1 месяц × число месяцев */
+function savingPct(plan, months){
+  const base = PRICES[plan].m[1] * months;
+  const real = PRICES[plan].m[months];
+  if(months === 1 || base <= 0) return 0;
+  return Math.round((1 - real / base) * 100);
+}
+
+const $ = id => document.getElementById(id);
+let lang = (function(){
+  const p = new URLSearchParams(location.search).get('lang');
+  if(['ru','en','vi'].includes(p)){ try{localStorage.setItem('cvpn_lang',p)}catch(e){} return p; }
+  let ls=null; try{ls=localStorage.getItem('cvpn_lang')}catch(e){}
+  return ['ru','en','vi'].includes(ls)?ls:'ru';
+})();
+
+function syncLangInUrl(l){
+  try{ const u=new URL(location.href);
+    if(l==='ru') u.searchParams.delete('lang'); else u.searchParams.set('lang',l);
+    history.replaceState(null,'',u.toString()); }catch(e){}
+}
+
+function renderPlans(){
+  const T = I18N[lang];
+  document.documentElement.lang = lang;
+  $('eyebrow').textContent = T.eyebrow;
+  $('title').textContent = T.title;
+  $('tagline').textContent = T.tagline;
+  $('note').textContent = T.note;
+  $('cta').textContent = T.cta;
+  $('updated').textContent = T.updated;
+  [...$('langs').children].forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+
+  const host = $('plans');
+  host.innerHTML = '';
+  PLAN_ORDER.forEach((plan, idx) => {
+    const p = PRICES[plan];
+    const el = document.createElement('section');
+    el.className = 'plan' + (p.hit ? ' hit' : '');
+    el.style.animationDelay = (0.1 + idx*0.08) + 's';
+
+    let rows = '';
+    PERIODS.forEach(m => {
+      const price = p.m[m];
+      const pct = savingPct(plan, m);
+      const saveHtml = pct > 0
+        ? `<span class="save">${T.save(pct)}</span>`
+        : `<span class="save none">—</span>`;
+      rows += `<div class="rowp">
+        <span class="per">${T.period(m)}</span>
+        <span class="right">
+          <span class="price">${fmt(price)}<span class="cur">₽</span></span>
+          ${saveHtml}
+        </span>
+      </div>`;
+    });
+
+    el.innerHTML =
+      (p.hit ? `<span class="badge">${T.hit}</span>` : '') +
+      `<h2>${plan}</h2>` +
+      `<div class="dev">${T.devices(p.devices)}</div>` +
+      rows;
+    host.appendChild(el);
+  });
+}
+
+[...$('langs').children].forEach(b=>{
+  b.onclick=()=>{ lang=b.dataset.lang; try{localStorage.setItem('cvpn_lang',lang)}catch(e){} syncLangInUrl(lang); renderPlans(); };
+});
+
+/* parallax кристалла по курсору (как на доках) */
+(function(){
+  const stage=$('stage'), gem=$('gem');
+  if(!stage||!gem||window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(window.matchMedia('(hover: none)').matches) return;
+  stage.addEventListener('pointermove',(e)=>{
+    const r=stage.getBoundingClientRect();
+    const dx=(e.clientX-(r.left+r.width/2))/r.width;
+    const dy=(e.clientY-(r.top+r.height/2))/r.height;
+    gem.style.transform=`rotateY(${dx*22}deg) rotateX(${-dy*22}deg)`;
+  });
+  stage.addEventListener('pointerleave',()=>{ gem.style.transform=''; });
+})();
+
+renderPlans();
+</script>
+</body>
+</html>
