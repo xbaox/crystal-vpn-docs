@@ -1,6 +1,6 @@
 # Crystal VPN — Public Offer (Terms of Service)
 
-> **Version 1.2 of 2026-06-25.** Informational translation. The binding version is the
+> **Version 1.3 of 2026-06-25.** Informational translation. The binding version is the
 > Russian one. The Provider may amend the terms; the new version applies to contracts
 > concluded thereafter.
 
@@ -28,6 +28,8 @@ Service's Telegram bot.
   protecting data on public networks via dedicated servers.
 - **Service(s)** — providing the Customer access to the Service on a subscription basis.
 - **Subscription** — the right to use the Service for the paid period (1, 3, 6 or 12 months).
+- **Gift (gift code)** — a right of access to the Service paid for by the Customer and
+  intended to be passed on to another person (the "Recipient") via a one-time link/code.
 - **Telegram bot** — the Service's main interface: [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot).
 
 ## 3. Subject
@@ -38,6 +40,11 @@ data-protection service; the Customer pays for the Service per the chosen plan.
 **3.2.** Plan names, contents (number of devices, period) and current prices are shown in the
 Service's Telegram bot and form an integral part of this offer.
 
+**3.3.** A subscription may be purchased as a gift. When buying a gift, the Customer pays for
+the Service, while access is granted not to the Customer but to the Recipient — the person to
+whom the Customer passes a one-time code/link. The terms of purchase, transfer, activation and
+refund of a gift are set out in clauses 4.4, 5.6, 6.5 and 7.5 of this offer.
+
 ## 4. Delivery and term
 
 **4.1.** Access to the Service (an access key / configuration file) is provided automatically
@@ -47,6 +54,12 @@ in the Telegram bot immediately after payment is confirmed.
 
 **4.3.** The Service is deemed duly rendered if access is provided and operational throughout
 the paid period.
+
+**4.4.** When buying a gift, the Customer receives a one-time code/link (in the form
+`t.me/Crysta1_VPNbot?start=gift_<code>`) to pass on to the Recipient. Access to the Service is
+granted to the Recipient automatically once they activate the code. A gift code is valid for a
+limited period (30 days from purchase by default); an unactivated code is voided upon expiry
+without access being granted.
 
 ## 5. Price and payment
 
@@ -71,6 +84,10 @@ the Telegram bot: the "My keys" section → "Unlink card". Unlinking immediately
 method saved by the payment service; no further automatic charges are made. Any previously paid
 subscription remains in effect until the end of the paid period.
 
+**5.6.** A gift is paid for via the same methods listed in clause 5.2. Auto-renewal does not apply
+to gifts. The Customer's personal discounts (if any) do not apply to the gift price unless
+expressly stated otherwise in the Telegram bot.
+
 ## 6. Refunds
 
 **6.1.** **Bank card** — a refund is available on request to support within 14 (fourteen) days
@@ -86,6 +103,11 @@ under Telegram's rules.
 **6.4.** No refund is made for the period during which the Service was actually rendered
 (access was active).
 
+**6.5.** A refund for a gift is made under clauses 6.1–6.2 only provided the gift code has not yet
+been activated by the Recipient (the Service has not actually been rendered). Once the code is
+activated by the Recipient, the Service is deemed rendered and is non-refundable. When an
+unactivated gift is refunded, the code is voided.
+
 ## 7. Rights and obligations
 
 **7.1.** The Customer provides accurate data, uses the Service personally and does not share
@@ -100,6 +122,14 @@ prohibited. The Provider may terminate access upon breach.
 
 **7.4.** The Provider may unilaterally amend the terms and plans by publishing changes at this
 address and in the Telegram bot.
+
+**7.5.** When buying a gift, the Customer may attach a text greeting and an image, which are
+shown to the Recipient on activation of the gift. The Customer is responsible for such content
+and warrants its lawfulness and non-infringement of third-party rights. It is prohibited to
+attach the content listed in clause 7.3, as well as pornographic material, material that exploits
+minors, incitement to violence and hate speech. The Provider does not pre-moderate greetings but
+may refuse to deliver them, remove the content and/or void the gift without a refund in case of
+breach of this clause.
 
 ## 8. Liability
 
@@ -138,4 +168,4 @@ by negotiation; a pre-trial procedure is mandatory.
 | **Telegram bot** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
 | **Support** | [@bao_gigastore](https://t.me/bao_gigastore) |
 
-*Version 1.2 of 2026-06-25*
+*Version 1.3 of 2026-06-25*

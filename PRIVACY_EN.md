@@ -1,6 +1,6 @@
 # Crystal VPN — Privacy Policy
 
-> **Version 1.1 of 2026-06-20.** Informational translation. The binding version is the Russian one.
+> **Version 1.2 of 2026-06-25.** Informational translation. The binding version is the Russian one.
 
 **Data operator:** self-employed **Nguyen Za Bao**, INN **504109403841**.
 Contact: [@bao_gigastore](https://t.me/bao_gigastore), zabaonguen03@gmail.com.
@@ -17,6 +17,10 @@ The minimum necessary:
 - **interface language**;
 - **subscription history** — plan, period, expiry;
 - **payment log** — payment ID, amount, date;
+- **gift content** — when buying a subscription as a gift, we store the greeting text and a
+  reference to the attached image (a Telegram file_id) provided by the Customer. The image
+  itself is stored within Telegram's infrastructure; we store only the reference and the text
+  and use them solely to show them to the recipient on gift activation;
 - **aggregated traffic** — total bytes per device (for the statistics screen);
 - **connection metadata** — IP address, time and session duration (kept 7 days, then deleted).
 
@@ -32,13 +36,16 @@ The minimum necessary:
 ## 3. Why we need this data
 
 For identification, granting and renewing access, showing statistics and enforcing plan limits,
-keeping payment records and handling possible refunds.
+keeping payment records and handling possible refunds, and for delivering a gift to its recipient
+(the greeting and image, if attached by the Customer).
 
 ## 4. Who we share data with
 
 We do not share data with third parties, except:
 
 - **ЮMoney NBCO LLC** (ЮKassa) — to process bank-card payments;
+- **the gift recipient** — the greeting and image attached to a gift are shown to the person the
+  Customer addressed the gift to (via the one-time link created by the Customer);
 - requests from authorized bodies under the law of the hosting country (only what we hold is
   provided; we do not have traffic contents).
 
@@ -46,6 +53,8 @@ We do not share data with third parties, except:
 
 - Profile and subscriptions — while the Telegram ID is active and the Service exists;
 - Payment log — 3 years (for records);
+- Gift content (greeting text, image reference) — while the gift code exists (until activation
+  or expiry), then deleted along with it;
 - Connection metadata — 7 days;
 - Traffic snapshots — 30 days.
 
@@ -55,4 +64,4 @@ You may request deletion of your profile and related data (except the payment lo
 must keep) or an export of the data we hold about you.
 Request via [@bao_gigastore](https://t.me/bao_gigastore).
 
-*Version 1.1 of 2026-06-20*
+*Version 1.2 of 2026-06-25*

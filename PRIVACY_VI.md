@@ -1,6 +1,6 @@
 # Crystal VPN — Chính sách bảo mật
 
-> **Phiên bản 1.1 ngày 20.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực pháp lý là bản tiếng Nga.
+> **Phiên bản 1.2 ngày 25.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực pháp lý là bản tiếng Nga.
 
 **Bên xử lý dữ liệu:** người tự kinh doanh **Nguyen Za Bao**, INN **504109403841**.
 Liên hệ: [@bao_gigastore](https://t.me/bao_gigastore), zabaonguen03@gmail.com.
@@ -17,6 +17,10 @@ Mức tối thiểu cần thiết:
 - **ngôn ngữ giao diện**;
 - **lịch sử đăng ký** — gói, thời hạn, ngày hết hạn;
 - **nhật ký thanh toán** — mã thanh toán, số tiền, ngày;
+- **nội dung quà tặng** — khi mua gói đăng ký để tặng, chúng tôi lưu văn bản lời chúc và một
+  tham chiếu đến hình ảnh đính kèm (Telegram file_id) do Khách hàng cung cấp. Bản thân hình ảnh
+  được lưu trong hạ tầng của Telegram; chúng tôi chỉ lưu tham chiếu và văn bản, và chỉ dùng để
+  hiển thị cho người nhận khi kích hoạt quà;
 - **lưu lượng tổng hợp** — tổng số byte theo từng thiết bị (cho màn hình thống kê);
 - **siêu dữ liệu kết nối** — địa chỉ IP, thời gian và thời lượng phiên (lưu 7 ngày, sau đó xóa).
 
@@ -32,13 +36,16 @@ Mức tối thiểu cần thiết:
 ## 3. Vì sao chúng tôi cần dữ liệu này
 
 Để nhận diện, cấp và gia hạn quyền truy cập, hiển thị thống kê và kiểm soát giới hạn gói, ghi
-nhận thanh toán và xử lý hoàn tiền khi cần.
+nhận thanh toán và xử lý hoàn tiền khi cần, cũng như để chuyển quà cho người nhận (lời chúc và
+hình ảnh, nếu được Khách hàng đính kèm).
 
 ## 4. Chúng tôi chia sẻ dữ liệu với ai
 
 Không chia sẻ với bên thứ ba, ngoại trừ:
 
 - **ЮMoney NBCO LLC** (ЮKassa) — để xử lý thanh toán bằng thẻ ngân hàng;
+- **người nhận quà** — lời chúc và hình ảnh đính kèm vào quà được hiển thị cho người mà Khách
+  hàng gửi quà (qua liên kết dùng một lần do Khách hàng tạo);
 - yêu cầu của cơ quan có thẩm quyền theo pháp luật quốc gia lưu trữ (chỉ cung cấp những gì
   chúng tôi có; chúng tôi không có nội dung lưu lượng).
 
@@ -46,6 +53,8 @@ Không chia sẻ với bên thứ ba, ngoại trừ:
 
 - Hồ sơ và đăng ký — khi Telegram ID còn hoạt động và Dịch vụ còn tồn tại;
 - Nhật ký thanh toán — 3 năm (để ghi nhận);
+- Nội dung quà tặng (văn bản lời chúc, tham chiếu hình ảnh) — chừng nào mã quà còn tồn tại
+  (đến khi kích hoạt hoặc hết hạn), sau đó bị xóa cùng với mã;
 - Siêu dữ liệu kết nối — 7 ngày;
 - Ảnh chụp lưu lượng — 30 ngày.
 
@@ -55,4 +64,4 @@ Bạn có thể yêu cầu xóa hồ sơ và dữ liệu liên quan (trừ nhậ
 hoặc xuất dữ liệu chúng tôi lưu về bạn.
 Yêu cầu qua [@bao_gigastore](https://t.me/bao_gigastore).
 
-*Phiên bản 1.1 ngày 20.06.2026*
+*Phiên bản 1.2 ngày 25.06.2026*
