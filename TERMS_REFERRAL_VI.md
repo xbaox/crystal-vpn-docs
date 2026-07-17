@@ -76,7 +76,7 @@ Giá trị giảm giá có thể thay đổi; giá trị hiện tại được h
 
 **3.4.** Những điều sau không được tính là thanh toán và không kích hoạt
 thưởng cho Người giới thiệu:
-- kích hoạt mã khuyến mãi miễn phí (ví dụ `BAO`);
+- kích hoạt mã khuyến mãi miễn phí (ví dụ `БАО`, ký tự Cyrillic);
 - việc Người nhận kích hoạt mã quà tặng (thanh toán được tính là việc mua quà do người mua thực
   hiện, không phải việc kích hoạt mã);
 - hoàn tiền thanh toán.

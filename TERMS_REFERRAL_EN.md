@@ -77,7 +77,7 @@ value is shown in the bot.
 
 **3.4.** The following do not count as a payment and do not trigger the
 Referrer's bonus:
-- activation of a free promo code (e.g., `BAO`);
+- activation of a free promo code (e.g., `БАО`, in Cyrillic);
 - activation of a gift code by the Recipient (payment means the purchase of the gift made by the
   buyer, not the activation of the code);
 - a payment refund.
