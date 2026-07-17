@@ -7,7 +7,7 @@ Hey! This document explains everything you need to know about the
 
 - how to invite a friend and get **+14 days** free
 - how to become a partner and earn up to **45%** of the first payment
-- how to pay for subscription: **Stars** or **crypto** (USDT / TON)
+- how to pay for subscription: **card (ЮKassa)**, **Stars** or **crypto** (USDT / TON)
 - answers to common questions
 
 The doc is friendly, no legal fog. If something is unclear after
@@ -193,7 +193,26 @@ isn't available in your country).
 - Telegram-first — works everywhere TG works.
 
 **Cons:**
-- Stars→₽ rate slightly floats.
+- The ⭐ price is computed from the ₽ price at an internal rate and rounded up
+to multiples of 10 ⭐.
+
+### 💳 Bank card / SBP (ЮKassa)
+
+The classic: a Russian card or SBP, the payment is processed by **ЮKassa**.
+
+**Pros:**
+- Familiar — no stars or crypto.
+- The self-employed receipt («Moy Nalog») arrives in the bot automatically; the last
+receipt always sits in «🔐 My keys» → «🧾 Last receipt».
+- The only method with **auto-renewal**: pick «🔄 Pay with auto-renewal» — the
+subscription renews itself 1 day before it ends. Turn it off in one tap:
+«🔐 My keys» → «🔗 Unlink card».
+
+**Cons:**
+- Requires a Russian card or bank.
+
+**If there's no card payment button** — the method is temporarily disabled in the
+config. That's normal: Stars and crypto work.
 
 ### 💎 CryptoBot (USDT / TON)
 
@@ -222,14 +241,15 @@ work in that case.
 
 ### Which to choose
 
-| | Stars | CryptoBot |
-|---|---|---|
-| Speed | instant | ~30 sec |
-| Simplicity | very | needs crypto |
-| Anonymity | medium | high |
-| Available in RU | yes | yes |
+| | Card (ЮKassa) | Stars | CryptoBot |
+|---|---|---|---|
+| Speed | seconds | instant | ~30 sec |
+| Simplicity | familiar | very | needs crypto |
+| Anonymity | low | medium | high |
+| Auto-renewal | yes | no | no |
+| Available in RU | yes | yes | yes |
 
-**Recommendation for most: Stars.** Crypto — if you're already into it.
+**Recommendation for most: card or Stars.** Crypto — if you're already into it.
 
 ---
 
@@ -263,6 +283,14 @@ A: Same — the bonus waits in pending. Buy in a year — get it.
 
 **Q: Can I transfer bonus days to someone else?**
 A: No, bonuses are tied to your `tg_id`.
+
+**Q: A friend gifted me a subscription via their link — will they get a bonus?**
+A: No. Only a paid purchase by the invited person themselves gives a bonus;
+activating a gift code does not count as a purchase.
+
+**Q: What if a friend bought a gift for someone else?**
+A: Yes — buying a gift is their paid purchase. If it's the friend's first payment,
+you'll get +14 days.
 
 ### 💼 About partnership
 

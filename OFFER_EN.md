@@ -1,8 +1,10 @@
 # Crystal VPN — Public Offer (Terms of Service)
 
 > **Version 1.3 of 2026-06-25.** Informational translation. The binding version is the
-> Russian one. The Provider may amend the terms; the new version applies to contracts
-> concluded thereafter.
+> Russian one. The Provider may amend the terms. The new version takes effect 7 (seven)
+> days after publication at this address and applies, including to previously concluded
+> contracts that continue in effect after that period; continued use of the Service after
+> the changes take effect constitutes agreement with the new version.
 
 ---
 
@@ -27,7 +29,8 @@ Service's Telegram bot.
 - **Service (Crystal VPN)** — a software service for encrypting internet traffic and
   protecting data on public networks via dedicated servers.
 - **Service(s)** — providing the Customer access to the Service on a subscription basis.
-- **Subscription** — the right to use the Service for the paid period (1, 3, 6 or 12 months).
+- **Subscription** — the right to use the Service for the paid period: 30, 90, 180 or 365 days
+  (in the Service interface the periods are shown as 1, 3, 6 and 12 months respectively).
 - **Gift (gift code)** — a right of access to the Service paid for by the Customer and
   intended to be passed on to another person (the "Recipient") via a one-time link/code.
 - **Telegram bot** — the Service's main interface: [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot).
@@ -43,7 +46,7 @@ Service's Telegram bot and form an integral part of this offer.
 **3.3.** A subscription may be purchased as a gift. When buying a gift, the Customer pays for
 the Service, while access is granted not to the Customer but to the Recipient — the person to
 whom the Customer passes a one-time code/link. The terms of purchase, transfer, activation and
-refund of a gift are set out in clauses 4.4, 5.6, 6.5 and 7.5 of this offer.
+refund of a gift are set out in clauses 4.4, 5.6, 6.6 and 7.5 of this offer.
 
 ## 4. Delivery and term
 
@@ -58,19 +61,29 @@ the paid period.
 **4.4.** When buying a gift, the Customer receives a one-time code/link (in the form
 `t.me/Crysta1_VPNbot?start=gift_<code>`) to pass on to the Recipient. Access to the Service is
 granted to the Recipient automatically once they activate the code. A gift code is valid for a
-limited period (30 days from purchase by default); an unactivated code is voided upon expiry
-without access being granted.
+limited period — 30 (thirty) days from its issuance to the Customer, unless a different period
+is stated in the Telegram bot; for a scheduled delivery the period runs from the scheduled
+delivery date. An unactivated code is voided upon expiry without access being granted. If, at
+the moment the code is activated, the Recipient already has an active subscription, the paid
+period is added to its end date.
+
+**4.5.** When the Customer switches to a plan with fewer devices, the Customer chooses, within
+7 (seven) days, the devices that keep access. Devices not selected are blocked after this
+period; the block is reversible until the choice is made. Deletion of a device configuration is
+performed only upon the Customer's explicit confirmation and is irreversible.
 
 ## 5. Price and payment
 
 **5.1.** The price is determined by the plan chosen by the Customer in the Telegram bot.
 All settlements are cashless.
 
-**5.2.** Payment methods: bank card via the **ЮKassa (YooKassa)** payment service, **Telegram Stars**,
-cryptocurrency via **@CryptoBot**.
+**5.2.** Payment methods: via the **ЮKassa (YooKassa)** payment service (bank card, SBP and other
+methods supported by the service), **Telegram Stars**, cryptocurrency (USDT, TON) via
+**@CryptoBot**. The list of methods available at any given moment is shown in the Telegram bot.
 
-**5.3.** For bank-card payments via ЮKassa, a receipt is generated and sent to the Customer
-automatically through the «Moy Nalog» service under Federal Law No. 422-FZ (professional income tax).
+**5.3.** For payments via ЮKassa, a receipt is generated in the «Moy Nalog» service under Federal
+Law No. 422-FZ (professional income tax) and sent to the Customer in the Telegram bot; the latest
+receipt is also available in the «🔐 My keys» → «🧾 Last receipt» section.
 
 **5.4.** When paying by bank card via ЮKassa, the Customer may enable automatic subscription
 renewal (auto-renewal). In that case the payment method is saved by the payment service for
@@ -80,7 +93,7 @@ time of the charge is debited. Enabling auto-renewal is voluntary and does not a
 of a one-time payment.
 
 **5.5.** The Customer may disable auto-renewal and unlink the saved payment method at any time in
-the Telegram bot: the "My keys" section → "Unlink card". Unlinking immediately deletes the payment
+the Telegram bot: the «🔐 My keys» section → the «🔗 Unlink card» button. Unlinking immediately deletes the payment
 method saved by the payment service; no further automatic charges are made. Any previously paid
 subscription remains in effect until the end of the paid period.
 
@@ -98,15 +111,23 @@ depends on the issuing bank.
 **6.2.** **Telegram Stars** — a refund is available within 21 (twenty-one) days of purchase
 under Telegram's rules.
 
-**6.3.** Upon refund, access to the Service ceases immediately.
+**6.3.** **Cryptocurrency via @CryptoBot** — a refund is available on the terms and within the
+period stated in clause 6.1 (the Service has not actually been rendered) and is made by
+transferring the same asset to the Customer's account in @CryptoBot.
 
-**6.4.** No refund is made for the period during which the Service was actually rendered
+**6.4.** Upon refund, access to the Service ceases immediately.
+
+**6.5.** No refund is made for the period during which the Service was actually rendered
 (access was active).
 
-**6.5.** A refund for a gift is made under clauses 6.1–6.2 only provided the gift code has not yet
+**6.6.** A refund for a gift is made under clauses 6.1–6.3 only provided the gift code has not yet
 been activated by the Recipient (the Service has not actually been rendered). Once the code is
 activated by the Recipient, the Service is deemed rendered and is non-refundable. When an
 unactivated gift is refunded, the code is voided.
+
+**6.7.** In the event of a forced refund or payment dispute (a Telegram Stars refund, chargeback,
+etc.), access granted on the basis of such payment is terminated, including the Recipient's
+access under a gift code paid for by that payment.
 
 ## 7. Rights and obligations
 
@@ -121,7 +142,8 @@ intended for accessing resources restricted by law.
 prohibited. The Provider may terminate access upon breach.
 
 **7.4.** The Provider may unilaterally amend the terms and plans by publishing changes at this
-address and in the Telegram bot.
+address and in the Telegram bot. Amendments to the terms take effect as set out in the preamble
+to this offer; amendments to plans apply to payments made after their publication.
 
 **7.5.** When buying a gift, the Customer may attach a text greeting and an image, which are
 shown to the Recipient on activation of the gift. The Customer is responsible for such content

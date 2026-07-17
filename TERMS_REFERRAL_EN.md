@@ -66,7 +66,7 @@ the terms of Section 4.
 change.
 
 **3.2.** For every invited friend who pays for any tariff for the **first
-time** using any available method (Telegram Stars or CryptoBot), the Referrer
+time** using any payment method available in the bot, the Referrer
 receives **14 days** added to their subscription. The bonus value may be
 changed; the current value is shown in the bot.
 
@@ -78,7 +78,8 @@ value is shown in the bot.
 **3.4.** The following do not count as a payment and do not trigger the
 Referrer's bonus:
 - activation of a free promo code (e.g., `BAO`);
-- the trial period;
+- activation of a gift code by the Recipient (payment means the purchase of the gift made by the
+  buyer, not the activation of the code);
 - a payment refund.
 
 **3.5.** Bonus days:
@@ -212,8 +213,8 @@ Partners).
 **7.3.** If a Partner considers the deactivation unfair, they may message the
 Administrator directly. The Administrator's decision is final.
 
-**7.4.** In the event of a user refund (a Telegram Stars refund or a
-CryptoBot chargeback), the Partner's commission for that payment **is not
+**7.4.** In the event of a user refund (regardless of the payment method),
+the Partner's commission for that payment **is not
 rolled back automatically**. If the case is clearly fraudulent, the
 Administrator may reverse the commission manually and notify the Partner.
 

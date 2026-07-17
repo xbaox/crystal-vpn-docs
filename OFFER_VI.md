@@ -1,8 +1,10 @@
 # Crystal VPN — Điều khoản dịch vụ (Chào hàng công khai)
 
 > **Phiên bản 1.3 ngày 25.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực
-> pháp lý là bản tiếng Nga. Nhà cung cấp có quyền sửa đổi điều khoản; phiên bản mới áp dụng
-> cho các hợp đồng ký kết sau đó.
+> pháp lý là bản tiếng Nga. Nhà cung cấp có quyền sửa đổi điều khoản. Phiên bản mới có hiệu lực
+> sau 7 (bảy) ngày kể từ khi công bố tại địa chỉ này và áp dụng, bao gồm cả các hợp đồng đã ký
+> kết trước đó còn tiếp tục hiệu lực sau thời hạn này; việc tiếp tục sử dụng Dịch vụ sau khi các
+> thay đổi có hiệu lực đồng nghĩa với việc đồng ý với phiên bản mới.
 
 ---
 
@@ -26,7 +28,8 @@ Hợp đồng được coi là giao kết kể từ thời điểm chấp nhận
 - **Dịch vụ (Crystal VPN)** — dịch vụ phần mềm mã hóa lưu lượng internet và bảo vệ dữ liệu
   trên mạng công cộng thông qua các máy chủ chuyên dụng.
 - **Dịch vụ (cung cấp)** — cấp cho Khách hàng quyền truy cập Dịch vụ theo hình thức đăng ký.
-- **Gói đăng ký** — quyền sử dụng Dịch vụ trong thời hạn đã thanh toán (1, 3, 6 hoặc 12 tháng).
+- **Gói đăng ký** — quyền sử dụng Dịch vụ trong thời hạn đã thanh toán: 30, 90, 180 hoặc 365 ngày
+  (trong giao diện Dịch vụ, các thời hạn được hiển thị lần lượt là 1, 3, 6 và 12 tháng).
 - **Quà tặng (mã quà)** — quyền truy cập Dịch vụ do Khách hàng thanh toán, nhằm chuyển cho người
   khác (sau đây gọi là «Người nhận») qua một liên kết/mã dùng một lần.
 - **Bot Telegram** — giao diện chính của Dịch vụ: [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot).
@@ -42,7 +45,7 @@ Telegram của Dịch vụ và là một phần không thể tách rời của c
 **3.3.** Có thể mua gói đăng ký làm quà tặng. Khi mua quà, Khách hàng thanh toán Dịch vụ, còn
 quyền truy cập được cấp không phải cho Khách hàng mà cho Người nhận — người mà Khách hàng chuyển
 mã/liên kết dùng một lần. Điều kiện mua, chuyển, kích hoạt và hoàn tiền quà tặng được quy định
-tại các khoản 4.4, 5.6, 6.5 và 7.5 của chào hàng này.
+tại các khoản 4.4, 5.6, 6.6 và 7.5 của chào hàng này.
 
 ## 4. Cách thức và thời hạn cung cấp
 
@@ -57,18 +60,28 @@ trong suốt thời hạn đã thanh toán.
 **4.4.** Khi mua quà, Khách hàng nhận một mã/liên kết dùng một lần (dạng
 `t.me/Crysta1_VPNbot?start=gift_<mã>`) để tự chuyển cho Người nhận. Quyền truy cập Dịch vụ được
 cấp cho Người nhận tự động sau khi họ kích hoạt mã. Mã quà có hiệu lực trong thời gian giới hạn
-(mặc định 30 ngày kể từ khi mua); mã chưa kích hoạt sẽ bị hủy khi hết hạn mà không cấp quyền truy cập.
+— 30 (ba mươi) ngày kể từ khi được cấp cho Khách hàng, trừ khi thời hạn khác được nêu trong bot
+Telegram; khi giao theo lịch hẹn, thời hạn được tính từ ngày giao đã lên lịch. Mã chưa kích hoạt
+sẽ bị hủy khi hết hạn mà không cấp quyền truy cập. Nếu tại thời điểm kích hoạt mã, Người nhận đã
+có gói đăng ký đang hoạt động, thời hạn đã thanh toán được cộng vào ngày kết thúc gói đó.
+
+**4.5.** Khi Khách hàng chuyển sang gói có ít thiết bị hơn, trong vòng 7 (bảy) ngày Khách hàng
+chọn các thiết bị giữ quyền truy cập. Các thiết bị không được chọn sẽ bị chặn sau thời hạn này;
+việc chặn có thể đảo ngược cho đến khi thực hiện lựa chọn. Việc xóa cấu hình thiết bị chỉ được
+thực hiện khi Khách hàng xác nhận rõ ràng và không thể đảo ngược.
 
 ## 5. Giá và thanh toán
 
 **5.1.** Giá được xác định theo gói Khách hàng chọn trong bot Telegram. Mọi thanh toán đều
 không dùng tiền mặt.
 
-**5.2.** Phương thức thanh toán: thẻ ngân hàng qua dịch vụ **ЮKassa (YooKassa)**, **Telegram Stars**,
-tiền điện tử qua **@CryptoBot**.
+**5.2.** Phương thức thanh toán: qua dịch vụ **ЮKassa (YooKassa)** (thẻ ngân hàng, SBP và các
+phương thức khác được dịch vụ hỗ trợ), **Telegram Stars**, tiền điện tử (USDT, TON) qua
+**@CryptoBot**. Danh sách phương thức khả dụng tại từng thời điểm được hiển thị trong bot Telegram.
 
-**5.3.** Khi thanh toán bằng thẻ ngân hàng qua ЮKassa, biên lai được tạo và gửi cho Khách hàng
-tự động qua dịch vụ «Moy Nalog» theo Luật Liên bang số 422-FZ (thuế thu nhập nghề nghiệp).
+**5.3.** Khi thanh toán qua ЮKassa, biên lai được tạo trong dịch vụ «Moy Nalog» theo Luật Liên
+bang số 422-FZ (thuế thu nhập nghề nghiệp) và gửi cho Khách hàng trong bot Telegram; biên lai gần
+nhất cũng có trong mục «🔐 Khóa của tôi» → «🧾 Biên lai gần nhất».
 
 **5.4.** Khi thanh toán bằng thẻ ngân hàng qua ЮKassa, Khách hàng có thể bật tự động gia hạn gói
 đăng ký. Khi đó, phương thức thanh toán được lưu tại dịch vụ thanh toán để dùng cho các lần trừ
@@ -78,7 +91,7 @@ gia hạn cho một kỳ hạn tương đương; số tiền bị trừ là giá
 một lần.
 
 **5.5.** Khách hàng có quyền tắt tự động gia hạn và hủy liên kết phương thức thanh toán đã lưu bất
-cứ lúc nào trong bot Telegram: mục «Khóa của tôi» → «Hủy liên kết thẻ». Việc hủy liên kết sẽ xóa
+cứ lúc nào trong bot Telegram: mục «🔐 Khóa của tôi» → nút «🔗 Hủy liên kết thẻ». Việc hủy liên kết sẽ xóa
 ngay phương thức thanh toán đã lưu tại dịch vụ thanh toán; không thực hiện thêm bất kỳ lần tự động
 trừ tiền nào. Gói đăng ký đã thanh toán trước đó vẫn có hiệu lực đến hết kỳ hạn đã thanh toán.
 
@@ -96,13 +109,21 @@ làm việc; thời gian ghi có thực tế phụ thuộc ngân hàng phát hà
 **6.2.** **Telegram Stars** — có thể hoàn tiền trong vòng 21 (hai mươi mốt) ngày kể từ khi mua,
 theo quy định của Telegram.
 
-**6.3.** Khi hoàn tiền, quyền truy cập Dịch vụ chấm dứt ngay lập tức.
+**6.3.** **Tiền điện tử qua @CryptoBot** — có thể hoàn tiền theo điều kiện và trong thời hạn nêu
+tại khoản 6.1 (Dịch vụ thực tế chưa được cung cấp) và được thực hiện bằng cách chuyển cùng loại
+tài sản về tài khoản của Khách hàng trong dịch vụ @CryptoBot.
 
-**6.4.** Không hoàn tiền cho khoảng thời gian Dịch vụ đã thực tế được cung cấp (quyền truy cập đã hoạt động).
+**6.4.** Khi hoàn tiền, quyền truy cập Dịch vụ chấm dứt ngay lập tức.
 
-**6.5.** Hoàn tiền cho quà tặng được thực hiện theo các khoản 6.1–6.2 chỉ khi mã quà chưa được
+**6.5.** Không hoàn tiền cho khoảng thời gian Dịch vụ đã thực tế được cung cấp (quyền truy cập đã hoạt động).
+
+**6.6.** Hoàn tiền cho quà tặng được thực hiện theo các khoản 6.1–6.3 chỉ khi mã quà chưa được
 Người nhận kích hoạt (Dịch vụ thực tế chưa được cung cấp). Sau khi mã được Người nhận kích hoạt,
 Dịch vụ được coi là đã cung cấp và không hoàn tiền. Khi hoàn tiền quà chưa kích hoạt, mã sẽ bị hủy.
+
+**6.7.** Trong trường hợp hoàn tiền cưỡng bức hoặc tranh chấp thanh toán (hoàn tiền Telegram Stars,
+chargeback, v.v.), quyền truy cập được cấp trên cơ sở khoản thanh toán đó sẽ chấm dứt, bao gồm cả
+quyền truy cập của Người nhận theo mã quà được thanh toán bằng khoản đó.
 
 ## 7. Quyền và nghĩa vụ
 
@@ -117,7 +138,9 @@ nguyên bị pháp luật hạn chế.
 vi trái pháp luật nào. Nhà cung cấp có quyền chấm dứt truy cập khi vi phạm.
 
 **7.4.** Nhà cung cấp có quyền đơn phương sửa đổi điều khoản và gói cước bằng cách công bố thay
-đổi tại địa chỉ này và trong bot Telegram.
+đổi tại địa chỉ này và trong bot Telegram. Các thay đổi điều khoản có hiệu lực theo trình tự nêu
+trong lời mở đầu của chào hàng này; các thay đổi gói cước áp dụng cho các khoản thanh toán thực
+hiện sau khi công bố.
 
 **7.5.** Khi mua quà, Khách hàng có thể đính kèm lời chúc dạng văn bản và một hình ảnh, được hiển
 thị cho Người nhận khi kích hoạt quà. Khách hàng chịu trách nhiệm về nội dung này và bảo đảm tính

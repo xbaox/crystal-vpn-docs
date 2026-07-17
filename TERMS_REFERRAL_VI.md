@@ -66,7 +66,7 @@ dạng `t.me/Crysta1_VPNbot?start=ref_<id>`. Liên kết là cố định và kh
 đổi.
 
 **3.2.** Với mỗi người bạn được mời thanh toán bất kỳ gói nào **lần đầu tiên**
-bằng bất kỳ phương thức khả dụng nào (Telegram Stars hoặc CryptoBot), Người
+bằng bất kỳ phương thức thanh toán khả dụng nào trong bot, Người
 giới thiệu nhận được **14 ngày** cộng vào gói đăng ký của mình. Giá trị
 thưởng có thể thay đổi; giá trị hiện tại được hiển thị trong bot.
 
@@ -77,7 +77,8 @@ Giá trị giảm giá có thể thay đổi; giá trị hiện tại được h
 **3.4.** Những điều sau không được tính là thanh toán và không kích hoạt
 thưởng cho Người giới thiệu:
 - kích hoạt mã khuyến mãi miễn phí (ví dụ `BAO`);
-- giai đoạn dùng thử;
+- việc Người nhận kích hoạt mã quà tặng (thanh toán được tính là việc mua quà do người mua thực
+  hiện, không phải việc kích hoạt mã);
 - hoàn tiền thanh toán.
 
 **3.5.** Ngày thưởng:
@@ -209,8 +210,8 @@ cho Đối tác (ví dụ — xung đột lợi ích với các Đối tác khá
 nhắn tin trực tiếp cho Quản trị viên. Quyết định của Quản trị viên là quyết
 định cuối cùng.
 
-**7.4.** Trong trường hợp người dùng hoàn tiền (hoàn tiền Telegram Stars hoặc
-chargeback CryptoBot), hoa hồng của Đối tác cho khoản thanh toán đó **không
+**7.4.** Trong trường hợp người dùng hoàn tiền (bất kể phương thức thanh toán),
+hoa hồng của Đối tác cho khoản thanh toán đó **không
 bị thu hồi tự động**. Nếu trường hợp rõ ràng là gian lận, Quản trị viên có
 thể thu hồi hoa hồng thủ công và thông báo cho Đối tác.
 

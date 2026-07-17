@@ -9,7 +9,7 @@ Chào bạn! Tài liệu này giải thích mọi thứ bạn cần biết về 
 
 - cách mời bạn bè và nhận **+14 ngày** miễn phí
 - cách trở thành đối tác và kiếm tới **45%** từ khoản thanh toán đầu tiên
-- cách thanh toán: **Stars** hoặc **crypto** (USDT / TON)
+- cách thanh toán: **thẻ (ЮKassa)**, **Stars** hoặc **crypto** (USDT / TON)
 - câu trả lời cho các câu hỏi thường gặp
 
 Tài liệu thân thiện, không có thuật ngữ pháp lý. Nếu sau khi đọc vẫn
@@ -192,7 +192,26 @@ quốc gia của bạn không bán Stars trực tiếp).
 - Telegram-first — hoạt động ở mọi nơi TG hoạt động.
 
 **Nhược điểm:**
-- Tỷ giá Stars→₽ hơi dao động.
+- Giá tính bằng ⭐ được tính từ giá ₽ theo tỷ giá nội bộ và làm tròn lên
+đến bội số của 10 ⭐.
+
+### 💳 Thẻ ngân hàng / SBP (ЮKassa)
+
+Cổ điển: thẻ Nga hoặc SBP, thanh toán do **ЮKassa** xử lý.
+
+**Ưu điểm:**
+- Quen thuộc — không cần stars hay crypto.
+- Biên lai người tự kinh doanh («Moy Nalog») tự đến trong bot; biên lai gần
+nhất luôn nằm trong «🔐 Khóa của tôi» → «🧾 Biên lai gần nhất».
+- Phương thức duy nhất có **tự động gia hạn**: chọn «🔄 Thanh toán tự động gia
+hạn» — gói đăng ký tự gia hạn 1 ngày trước khi hết hạn. Tắt trong một chạm:
+«🔐 Khóa của tôi» → «🔗 Hủy liên kết thẻ».
+
+**Nhược điểm:**
+- Cần thẻ hoặc ngân hàng Nga.
+
+**Nếu không có nút thanh toán bằng thẻ** — phương thức tạm thời bị tắt trong
+cấu hình. Điều này bình thường: Stars và crypto vẫn hoạt động.
 
 ### 💎 CryptoBot (USDT / TON)
 
@@ -221,14 +240,15 @@ Stars hoạt động trong trường hợp này.
 
 ### Cái nào nên chọn
 
-| | Stars | CryptoBot |
-|---|---|---|
-| Tốc độ | tức thì | ~30 sec |
-| Đơn giản | rất | cần crypto |
-| Ẩn danh | trung bình | cao |
-| Có sẵn ở RU | có | có |
+| | Thẻ (ЮKassa) | Stars | CryptoBot |
+|---|---|---|---|
+| Tốc độ | vài giây | tức thì | ~30 sec |
+| Đơn giản | quen thuộc | rất | cần crypto |
+| Ẩn danh | thấp | trung bình | cao |
+| Tự động gia hạn | có | không | không |
+| Có sẵn ở RU | có | có | có |
 
-**Khuyến nghị cho đa số: Stars.** Crypto — nếu bạn đã hiểu về crypto.
+**Khuyến nghị cho đa số: thẻ hoặc Stars.** Crypto — nếu bạn đã hiểu về crypto.
 
 ---
 
@@ -262,6 +282,14 @@ A: Tương tự — bonus chờ bạn ở pending. Mua sau một năm — vẫn 
 
 **Q: Có thể chuyển ngày bonus cho người khác không?**
 A: Không, bonus gắn với `tg_id` của bạn.
+
+**Q: Bạn tôi tặng tôi gói đăng ký qua liên kết của họ — họ có nhận thưởng không?**
+A: Không. Chỉ giao dịch mua trả phí của chính người được mời mới cho thưởng;
+việc kích hoạt mã quà tặng không được tính là mua.
+
+**Q: Còn nếu bạn tôi mua quà tặng cho người khác thì sao?**
+A: Có — mua quà là giao dịch mua trả phí của họ. Nếu đó là lần thanh toán đầu
+tiên của bạn ấy, bạn sẽ nhận +14 ngày.
 
 ### 💼 Về đối tác
 
