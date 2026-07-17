@@ -1,5 +1,7 @@
 # 🤝 Crystal VPN Program — How to Earn With Us
 
+> Informational translation. The binding version is the Russian one.
+
 Hey! This document explains everything you need to know about the
 **Crystal VPN** program:
 
@@ -10,7 +12,7 @@ Hey! This document explains everything you need to know about the
 
 The doc is friendly, no legal fog. If something is unclear after
 reading — message BAO directly:
-**[@bao_gigastore](https://t.me/bao_gigastore)**.
+**[@baocreates](https://t.me/baocreates)**.
 
 ---
 
@@ -82,7 +84,7 @@ chat to share, and the link with text is pre-filled.
 
 **This isn't for everyone.** Partner status is granted only by BAO
 (admin) personally. If you want to become a partner — message:
-**[@bao_gigastore](https://t.me/bao_gigastore)**.
+**[@baocreates](https://t.me/baocreates)**.
 
 ### Who it's for
 
@@ -126,7 +128,7 @@ social media, promocode for voice mention in YouTube/podcasts.
 
 ### How to become a partner
 
-1. **Message BAO** on Telegram: [@bao_gigastore](https://t.me/bao_gigastore).
+1. **Message BAO** on Telegram: [@baocreates](https://t.me/baocreates).
 2. Briefly say: who you are, where you'll promote, expected audience.
 3. BAO decides: add or not. If added — gives you:
 - `partner_code` (your promocode, letters/digits, e.g. `OLEG15`)
@@ -299,7 +301,7 @@ status. If paid — subscription applies within the same 30 seconds
 A: No. One payment — one method.
 
 **Q: What if I paid but the bot didn't activate my subscription?**
-A: Message BAO ([@bao_gigastore](https://t.me/bao_gigastore)) with the
+A: Message BAO ([@baocreates](https://t.me/baocreates)) with the
 transaction number — they'll check manually. It's a very rare situation
 (hasn't happened yet), but the insurance is there.
 
@@ -313,7 +315,7 @@ If you read till here — respect 🤝
 you've earned. Bonus days pile up in pending, partner balance doesn't
 burn, the referrer-referral binding is forever.
 
-Questions? **[@bao_gigastore](https://t.me/bao_gigastore)**.
+Questions? **[@baocreates](https://t.me/baocreates)**.
 
 — BAO, founder of Crystal VPN
 

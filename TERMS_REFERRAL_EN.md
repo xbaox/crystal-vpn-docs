@@ -5,6 +5,7 @@
 > takes effect 7 days after publication and applies to relations
 > continuing after this period. Continued participation in the program
 > after the changes take effect constitutes agreement with the new version.
+> Informational translation. The binding version is the Russian one.
 
 ---
 
@@ -17,7 +18,7 @@ partner program (status granted by the Administrator on an individual basis).
 
 **1.2.** The organizer and administrator of the Program (the "Administrator")
 is a self-employed payer of professional income tax, **Nguyen Gia Bao**,
-INN **504109403841**. Contact: [@bao_gigastore](https://t.me/bao_gigastore),
+INN **504109403841**. Contact: [@baocreates](https://t.me/baocreates),
 zabaonguen03@gmail.com.
 
 **1.3.** Crystal VPN is a software service for encrypting internet traffic
@@ -289,12 +290,10 @@ regarding the Program and supersede prior arrangements on its subject matter.
 
 ## 11. Contacts
 
-**Administrator:** [@bao_gigastore](https://t.me/bao_gigastore) ·
+**Administrator:** [@baocreates](https://t.me/baocreates) ·
 zabaonguen03@gmail.com
 
 **Bot:** [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot)
-
-**News Channel:** [@baoyoutube](https://t.me/baoyoutube)
 
 ---
 

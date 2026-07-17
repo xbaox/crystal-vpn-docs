@@ -2,8 +2,8 @@
 
 > **Version 1.2 of 2026-06-25.** Informational translation. The binding version is the Russian one.
 
-**Data operator:** self-employed **Nguyen Za Bao**, INN **504109403841**.
-Contact: [@bao_gigastore](https://t.me/bao_gigastore), zabaonguen03@gmail.com.
+**Data operator:** self-employed **Nguyen Gia Bao**, INN **504109403841**.
+Contact: [@baocreates](https://t.me/baocreates), zabaonguen03@gmail.com.
 
 ---
 
@@ -62,6 +62,6 @@ We do not share data with third parties, except:
 
 You may request deletion of your profile and related data (except the payment log, which we
 must keep) or an export of the data we hold about you.
-Request via [@bao_gigastore](https://t.me/bao_gigastore).
+Request via [@baocreates](https://t.me/baocreates).
 
 *Version 1.2 of 2026-06-25*

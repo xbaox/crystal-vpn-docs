@@ -2,8 +2,8 @@
 
 > **Phiên bản 1.2 ngày 25.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực pháp lý là bản tiếng Nga.
 
-**Bên xử lý dữ liệu:** người tự kinh doanh **Nguyen Za Bao**, INN **504109403841**.
-Liên hệ: [@bao_gigastore](https://t.me/bao_gigastore), zabaonguen03@gmail.com.
+**Bên xử lý dữ liệu:** người tự kinh doanh **Nguyen Gia Bao**, INN **504109403841**.
+Liên hệ: [@baocreates](https://t.me/baocreates), zabaonguen03@gmail.com.
 
 ---
 
@@ -62,6 +62,6 @@ Không chia sẻ với bên thứ ba, ngoại trừ:
 
 Bạn có thể yêu cầu xóa hồ sơ và dữ liệu liên quan (trừ nhật ký thanh toán bắt buộc phải lưu)
 hoặc xuất dữ liệu chúng tôi lưu về bạn.
-Yêu cầu qua [@bao_gigastore](https://t.me/bao_gigastore).
+Yêu cầu qua [@baocreates](https://t.me/baocreates).
 
 *Phiên bản 1.2 ngày 25.06.2026*

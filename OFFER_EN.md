@@ -13,7 +13,7 @@ of the Civil Code of the Russian Federation, addressed to any legally capable pe
 "Customer") who wishes to use the Services.
 
 **1.2.** The Provider is a self-employed payer of the professional income tax,
-**Nguyen Za Bao**, INN **504109403841** (the "Provider").
+**Nguyen Gia Bao**, INN **504109403841** (the "Provider").
 
 **1.3.** Acceptance of the offer (full and unconditional) occurs when the Customer registers
 in the Service's Telegram bot, places and pays for a subscription, or begins using the
@@ -161,11 +161,11 @@ by negotiation; a pre-trial procedure is mandatory.
 
 | | |
 |---|---|
-| **Self-employed** | Nguyen Za Bao |
+| **Self-employed** | Nguyen Gia Bao |
 | **INN** | 504109403841 |
 | **E-mail** | zabaonguen03@gmail.com |
 | **Phone** | +7 909 666-68-88 |
 | **Telegram bot** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
-| **Support** | [@bao_gigastore](https://t.me/bao_gigastore) |
+| **Support** | [@baocreates](https://t.me/baocreates) |
 
 *Version 1.3 of 2026-06-25*

@@ -1,6 +1,8 @@
 # 🤝 Chương trình Crystal VPN — Cách kiếm tiền cùng chúng tôi
 
-> 💬 Thấy lỗi dịch thuật? Hãy nhắn cho BAO: [@bao_gigastore](https://t.me/bao_gigastore).
+> Bản dịch mang tính thông tin. Phiên bản có hiệu lực pháp lý là bản tiếng Nga.
+
+> 💬 Thấy lỗi dịch thuật? Hãy nhắn cho BAO: [@baocreates](https://t.me/baocreates).
 
 Chào bạn! Tài liệu này giải thích mọi thứ bạn cần biết về chương trình
 **Crystal VPN**:
@@ -12,7 +14,7 @@ Chào bạn! Tài liệu này giải thích mọi thứ bạn cần biết về 
 
 Tài liệu thân thiện, không có thuật ngữ pháp lý. Nếu sau khi đọc vẫn
 chưa rõ — nhắn tin trực tiếp cho BAO:
-**[@bao_gigastore](https://t.me/bao_gigastore)**.
+**[@baocreates](https://t.me/baocreates)**.
 
 ---
 
@@ -82,7 +84,7 @@ chọn chat, và văn bản với link tự động được điền.
 
 **Cái này không phải cho mọi người.** Trạng thái đối tác chỉ được BAO
 (admin) cấp riêng. Nếu bạn muốn trở thành đối tác — nhắn:
-**[@bao_gigastore](https://t.me/bao_gigastore)**.
+**[@baocreates](https://t.me/baocreates)**.
 
 ### Phù hợp với ai
 
@@ -126,7 +128,7 @@ hội, promocode cho nhắc bằng giọng nói trong YouTube/podcast.
 
 ### Cách trở thành đối tác
 
-1. **Nhắn BAO** trên Telegram: [@bao_gigastore](https://t.me/bao_gigastore).
+1. **Nhắn BAO** trên Telegram: [@baocreates](https://t.me/baocreates).
 2. Nói ngắn gọn: bạn là ai, sẽ quảng bá ở đâu, audience dự kiến.
 3. BAO quyết định: thêm hay không. Nếu thêm — cấp cho bạn:
 - `partner_code` (promocode của bạn, chữ/số, ví dụ `OLEG15`)
@@ -213,7 +215,7 @@ mua hàng!»** với thiết bị.
 - Trễ 30 giây (thay vì 1-2 với Stars) — đây là polling job, hỏi
 CryptoBot mỗi 30s.
 
-**Nếu bot не có nút «💎 Thanh toán bằng crypto»** — tính năng tạm
+**Nếu bot không có nút «💎 Thanh toán bằng crypto»** — tính năng tạm
 tắt (không có token CryptoBot trong cấu hình của BAO). Bình thường,
 Stars hoạt động trong trường hợp này.
 
@@ -299,7 +301,7 @@ A: Không. Một thanh toán — một phương thức.
 
 **Q: Sẽ như thế nào nếu tôi đã thanh toán, nhưng bot không kích hoạt
 gói?**
-A: Nhắn BAO ([@bao_gigastore](https://t.me/bao_gigastore)) với số giao
+A: Nhắn BAO ([@baocreates](https://t.me/baocreates)) với số giao
 dịch — sẽ kiểm tra thủ công. Đây là tình huống rất hiếm (chưa từng
 xảy ra), nhưng bảo hiểm có.
 
@@ -314,7 +316,7 @@ những gì đã kiếm được. Ngày bonus tích lũy trong pending, số dư
 tác không cháy, liên kết người giới thiệu - người được giới thiệu là
 vĩnh viễn.
 
-Câu hỏi? **[@bao_gigastore](https://t.me/bao_gigastore)**.
+Câu hỏi? **[@baocreates](https://t.me/baocreates)**.
 
 — BAO, người sáng lập Crystal VPN
 
