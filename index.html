@@ -450,6 +450,7 @@ async function load(){
     const html = (window.marked ? marked.parse(md) : md.replace(/\n/g,'<br>'));
     box.classList.remove('swap'); void box.offsetWidth; box.classList.add('swap');
     box.innerHTML = html;
+    $('content').querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(h=>h.id=h.textContent.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu,'').trim().replace(/\s/g,'-'));
     revealHeadings();
   }catch(e){
     box.innerHTML=`<div class="state">${UI[lang].error}</div>`;
