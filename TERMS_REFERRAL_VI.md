@@ -1,6 +1,6 @@
 # Quy tắc Chương trình Đối tác và Giới thiệu Crystal VPN
 
-> **Phiên bản 1.1 ngày 20.06.2026.** Có hiệu lực từ thời điểm xuất bản.
+> **Phiên bản 1.2 ngày 17.07.2026.** Có hiệu lực từ thời điểm xuất bản.
 > Quản trị viên có quyền thay đổi; phiên bản cập nhật có hiệu lực sau 7 ngày
 > kể từ ngày xuất bản và áp dụng cho các quan hệ tiếp diễn sau thời hạn này.
 > Việc tiếp tục tham gia chương trình sau khi các thay đổi có hiệu lực đồng
@@ -294,4 +294,4 @@ zabaonguen03@gmail.com
 
 ---
 
-_Phiên bản 1.1 · 20.06.2026_
+_Phiên bản 1.2 · 17.07.2026_

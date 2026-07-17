@@ -1,6 +1,6 @@
 # Crystal VPN Partner and Referral Program Rules
 
-> **Version 1.1 of 2026-06-20.** Effective upon publication. The
+> **Version 1.2 of 2026-07-17.** Effective upon publication. The
 > Administrator reserves the right to make changes; the updated version
 > takes effect 7 days after publication and applies to relations
 > continuing after this period. Continued participation in the program
@@ -298,4 +298,4 @@ zabaonguen03@gmail.com
 
 ---
 
-_Version 1.1 · 2026-06-20_
+_Version 1.2 · 2026-07-17_

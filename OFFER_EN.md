@@ -1,6 +1,6 @@
 # Crystal VPN — Public Offer (Terms of Service)
 
-> **Version 1.3 of 2026-06-25.** Informational translation. The binding version is the
+> **Version 1.4 of 2026-07-17.** Informational translation. The binding version is the
 > Russian one. The Provider may amend the terms. The new version takes effect 7 (seven)
 > days after publication at this address and applies, including to previously concluded
 > contracts that continue in effect after that period; continued use of the Service after
@@ -190,4 +190,4 @@ by negotiation; a pre-trial procedure is mandatory.
 | **Telegram bot** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
 | **Support** | [@baocreates](https://t.me/baocreates) |
 
-*Version 1.3 of 2026-06-25*
+*Version 1.4 of 2026-07-17*

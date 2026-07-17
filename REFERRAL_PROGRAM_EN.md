@@ -2,6 +2,8 @@
 
 > Informational translation. The binding version is the Russian one.
 
+*Updated: 2026-07-17*
+
 Hey! This document explains everything you need to know about the
 **Crystal VPN** program:
 

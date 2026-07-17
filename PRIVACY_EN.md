@@ -1,6 +1,6 @@
 # Crystal VPN — Privacy Policy
 
-> **Version 1.2 of 2026-06-25.** Informational translation. The binding version is the Russian one.
+> **Version 1.3 of 2026-07-17.** Informational translation. The binding version is the Russian one.
 
 **Data operator:** self-employed **Nguyen Gia Bao**, INN **504109403841**.
 Contact: [@baocreates](https://t.me/baocreates), zabaonguen03@gmail.com.
@@ -79,4 +79,4 @@ anonymized, while the payment log and receipts are retained as mandatory to keep
 data we hold about them may also be requested.
 Request via [@baocreates](https://t.me/baocreates).
 
-*Version 1.2 of 2026-06-25*
+*Version 1.3 of 2026-07-17*

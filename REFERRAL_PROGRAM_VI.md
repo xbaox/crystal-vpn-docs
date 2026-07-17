@@ -4,6 +4,8 @@
 
 > 💬 Thấy lỗi dịch thuật? Hãy nhắn cho BAO: [@baocreates](https://t.me/baocreates).
 
+*Cập nhật: 17.07.2026*
+
 Chào bạn! Tài liệu này giải thích mọi thứ bạn cần biết về chương trình
 **Crystal VPN**:
 

@@ -1,6 +1,6 @@
 # Crystal VPN — Điều khoản dịch vụ (Chào hàng công khai)
 
-> **Phiên bản 1.3 ngày 25.06.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực
+> **Phiên bản 1.4 ngày 17.07.2026.** Bản dịch mang tính thông tin. Phiên bản có hiệu lực
 > pháp lý là bản tiếng Nga. Nhà cung cấp có quyền sửa đổi điều khoản. Phiên bản mới có hiệu lực
 > sau 7 (bảy) ngày kể từ khi công bố tại địa chỉ này và áp dụng, bao gồm cả các hợp đồng đã ký
 > kết trước đó còn tiếp tục hiệu lực sau thời hạn này; việc tiếp tục sử dụng Dịch vụ sau khi các
@@ -186,4 +186,4 @@ thương lượng; thủ tục tiền tố tụng là bắt buộc.
 | **Bot Telegram** | [@Crysta1_VPNbot](https://t.me/Crysta1_VPNbot) |
 | **Hỗ trợ** | [@baocreates](https://t.me/baocreates) |
 
-*Phiên bản 1.3 ngày 25.06.2026*
+*Phiên bản 1.4 ngày 17.07.2026*
